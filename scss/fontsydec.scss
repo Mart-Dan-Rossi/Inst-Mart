@@ -1,0 +1,151 @@
+//elementos importados de google font
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital,wght@1,200&display=swap');
+//----------------------------------
+//Tamaños de letra
+$fs-m: 1rem;
+$fs-sr: $fs-m - 0.3;
+$fs-s: $fs-m - 0.2;
+$fs-l: $fs-m + 0.2;
+$fs-xl: $fs-m + 0.4;
+$fs-xxl: $fs-m + 0.6;
+
+//font-family
+$ff-1: 'Roboto Mono', monospace;
+$ff-2: 'Oswald', sans-serif;
+
+//generales
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+//demás
+.linkAContactanos {
+    text-decoration: underline !important;
+}
+body {
+    div {
+        .instMart {
+            font-weight: bolder;
+            font-size: 5vh;
+        }
+        .leyendaHeader {
+            font-weight: bold;
+        }
+    }
+    header {
+        font-family: $ff-2;
+    }
+    main {
+        font-family: $ff-1;
+        font-size: $fs-m;
+        .leyenda {
+            font-size: $fs-sr;
+        }
+        //css index
+        .contenidoIndex {
+            font-weight: bolder;
+            font-size: $fs-xl;
+        }
+        //css instrumentos
+        .contenidoInstrumentos {
+            .segmentoDestacados, .ofertas {
+                p {
+                    font-weight: bold;
+                    font-size: $fs-xl;
+                }
+            }
+        }
+        //css destacados
+        div {
+            div{
+                div{
+                    .miDisplay {
+                        .h5 {
+                            font-size: $fs-m;
+                            font-weight: bold;
+                        }
+                        p {
+                            font-size: $fs-s;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            h2, h3, h4, h5, h6 {
+                font-size: $fs-m;
+                text-decoration: underline;
+            }
+        }
+    }
+    //css productos
+    .estructuraProducto {
+        .infoDetallada {
+            p {
+                font-size: $fs-s;
+            }
+            h3 {
+                font-size: $fs-s;
+                text-decoration: underline;
+            }
+            table {
+                tr {
+                    td {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .basicInterac {
+            h2 {
+                font-size: $fs-l;
+            }
+        }
+        .critics {
+            h3 {
+                text-decoration: underline;
+            }
+        }
+    }
+    footer {
+        .footer {
+            p {
+                font-size: $fs-s;
+            }
+        }
+    }
+}
+//media queris
+@media (min-width:1025px){
+    body {
+        main{
+            font-size: $fs-l;
+            .leyenda {
+                font-size: $fs-s;
+            }
+            div {
+                div{
+                    div{
+                        .miDisplay {
+                            .h5 {
+                                font-size: $fs-l;
+                                font-weight: bold;
+                            }
+                            p {
+                                font-size: $fs-m;
+                            }
+                        }
+                    }
+                }
+            }
+            //css index
+            .contenidoIndex {
+                font-size: $fs-xxl;
+            }
+        }
+    }
+}

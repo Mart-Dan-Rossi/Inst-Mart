@@ -1,0 +1,22 @@
+* {margin: 0;padding: 0;/* border: white dotted 2px;*/}
+
+//estilos de bs
+@import "./bs_scss/bootstrap.scss";
+
+//estilos de fonts
+@import "fontsydec.scss";
+
+//estilos de colores
+@import "colores.scss";
+
+//estilos de estructuras
+@import "estructuras.scss";
+
+//estilos de img
+@import "herramientasVisuales.scss";
+
+//imágenes de portadas
+@import "imgPortadas.scss";
+
+
+//La página está pensada como moviel first

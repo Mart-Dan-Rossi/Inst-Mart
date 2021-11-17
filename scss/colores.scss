@@ -1,0 +1,129 @@
+//colores
+$color1: lightgrey;
+$color2: black;
+$color3: grey;
+$color4: rgba(0, 0, 0, 0.678);
+$color5: firebrick;
+$color6: rgba(128, 128, 128, 0.712);
+$color7: rgba(255, 0, 0, 0.842);
+$color8: cornflowerblue;
+$color9: white;
+$color10:rgba(211, 211, 211, 0.568);
+
+body {
+    color: $color1;
+    background-color: $color2;
+    div {
+        .instMart, .leyendaHeader {
+            background-color: $color4;
+            color: $color5;
+        }
+    }
+    header {
+        background-image: linear-gradient($color1 90%, $color2);
+        @keyframes logo {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .index span, .contacto span, .destacados span, .bajosYGuitarras span, .otrasCuerdas span, .vientos span, .percusion span, .teclados span, .accesorios span {
+            background-color: $color4;
+            color: $color5;
+        }
+    }
+    .navSection {
+        color: $color2;
+        .breadcrumb-item a:hover{
+            background-color: $color6;
+        }
+        nav {
+            li{ 
+                a:hover, a:active, p:hover, p:active {
+                    background-color: $color6;
+                }
+            }
+        }
+    }
+    main {
+        background-image: linear-gradient($color2 10%, $color3, $color2 90%);
+        //main index
+        .contenidoIndex {            
+            background-color: $color1;
+            border-color: $color2;
+            .gridBYG, .gridOC, .gridP, .gridV, .gridT, .gridAYO {
+                color: $color7;
+            }
+            .gridBYG:hover, .gridOC:hover, .gridP:hover, .gridV:hover, .gridT:hover, .gridAYO:hover, .gridBYG:active, .gridOC:active, .gridP:active, .gridV:active, .gridT:active, .gridAYO:active {
+                color: $color8;
+            }
+        }
+        .contenidoInstrumentos {
+            border-color: $color1;
+            .segmentoDestacados {
+                background-color: $color1;
+                p {
+                    color: $color5;
+                }
+            }
+            .ofertas {
+                background-color: $color1;
+                p {
+                    color: $color5;
+                }
+            }
+        }
+        //main productos
+        .estructuraProducto {
+            .audioVisualInstrumento {
+                background-color: $color1;
+            }
+            .infoDetallada, .productosRelacionados, .critics {
+                background-color: $color1;
+                color: $color2;
+                th {
+                    background-color: $color3;
+                }
+                th, td {
+                    color: $color2;
+                }
+            }
+        }
+        //main destacados
+        div {
+            div{
+                div{
+                    .miDisplay {
+                        background-color: $color10;
+                    }
+                }
+            }
+        }
+    }
+    //main contactanos
+    .mainContacto{
+        color: $color9;
+    }
+    a {
+        color: $color2;
+    }
+    //css footer
+    footer {
+        background-color: $color1;
+        color: $color2;
+        border-bottom-color: $color2;
+        border-top-color: $color3;
+        .footerLogo {
+            border-color: $color2;
+        }
+        .footer {
+            p {
+                .linkAContactanos:hover, .linkAContactanos:active {
+                    color: $color8;
+                }
+            }
+        }
+    }
+}

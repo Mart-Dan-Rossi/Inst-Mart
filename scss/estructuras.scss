@@ -1,0 +1,253 @@
+//estructuras
+.iLineB, .iLineB li, footer li {
+    display: inline-block;
+}
+body {
+    max-width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    .index, .contacto, .destacados, .bajosYGuitarras, .vientos, .otrasCuerdas, .teclados, .percusion, .accesorios {
+        height: 70vh;
+        max-width: 100vw;
+        margin-bottom: 3px;
+        span {
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+    }
+    div{
+        a {
+            .logo {                
+                position: relative;
+                top: 10px;
+                height: 200px;
+            }
+            @keyframes logo {
+                0% {
+                    transform: translate(-300px);
+                }
+            }
+        }
+    }
+    header {
+        width: 100%;
+        .navSection {
+            max-width: 100%;
+            .navRedes{
+                position: absolute;
+                right: 4px;
+                .redes {
+                    height: 25px;
+                    position: relative;
+                    top: 0%;
+                    transition: all 0.5s;
+                }
+            }
+            h1 {
+                text-align: center;
+            }
+            //Parche bs
+            .navbar {
+                padding-top: 0px !important;
+                .container-fluid {
+                    padding-bottom: 10px !important;
+                }
+            }
+            //---------
+        }
+    }
+    main {
+        max-width: 100vw;
+        .leyenda {
+            max-width: 60vw;
+        }
+        //css index
+        .contenidoIndex {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 200px 200px 200px;
+            row-gap: 5px;
+            column-gap: 5px;
+            justify-content: center;
+            text-align: center;
+            border: ridge;
+            .gridBYG, .gridOC, .gridP, .gridV, .gridT, .gridAYO {
+                height: 200px; 
+            }
+        }
+        //css instrumentos
+        .contenidoInstrumentos {
+            max-width: 100%;
+            display: grid;    
+            grid-template-columns: 80vw;
+            grid-template-rows: 20vh 20vh;
+            row-gap: 5px;
+            column-gap: 5px;
+            justify-content: center;
+            border-width: 5px 0px 10px 0px;
+            border-style: ridge;
+            .ofertas, .segmentoDestacados {
+                position: relative;
+                padding: 15px;
+                margin: 0% 1% 1% 1%;
+                p {
+                    position: absolute;
+                    left: 18%;
+                    top: 3%;
+                    text-align: center;
+                }
+                img {
+                   height: 13vh; 
+                }
+            }
+        }
+        //Productos
+        .estructuraProducto {
+            display: grid;
+            grid-template-areas: 
+            "vid1 vid1"
+            "none interac"
+            "det det"
+            "rel rel"
+            "crit crit"
+            ;
+            max-width: 100vw;
+            .vid1 {
+                grid-area: vid1;
+            }            
+            .basicInterac {
+                grid-area: interac;
+            }            
+            .infoDetallada {
+                grid-area: det;
+            }            
+            .productosRelacionados {
+                grid-area: rel;
+            }            
+            .critics {
+                grid-area: crit;
+            }
+            .audioVisualInstrumento {
+                margin: 5px 0px;
+                padding: 10px 0px;
+                position: relative;
+                max-width: 50vw;
+            }
+            .basicInterac {
+                p, h2 {
+                    text-align: right;
+                }
+            }
+            .critics {
+                position: relative;
+                margin: 5px 0px;
+            }
+            .infoDetallada {
+                th {
+                    border: 3px solid;
+                }
+                td {
+                    border: 1px solid;
+                }
+            }
+        }
+        //css destacados
+        div {
+            div{
+                div{
+                    .miDisplay {
+                        position: absolute;
+                        width: 30vw;
+                        height: 100%;
+                        top: 0%;
+                    }
+                }
+            }
+        }
+    }
+    //contactanos
+    .mainContacto {
+        display: flex;
+        div {
+            div {
+                .miForm {
+                    width: 300px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .contactoAlinDer {
+            img {
+                width: 50vw;
+                max-width: 100%;
+            }
+        }
+    }
+    footer {
+        max-width: 100%;
+        border-bottom: double 5px;
+        border-top: solid 5px;
+        p {
+            margin-left: 10px;
+            padding: 0px 3px;
+        }
+        .footerLogo {
+            border: double 5px;
+            align-items: center;
+            height: 100px;
+        }
+        .footer {            
+            width: 80%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li {
+            img {
+                height: 18px;
+            }
+        }
+    }
+}
+//media queris
+//Desde Escritorio, pantallas grandes
+@media (min-width:1025px){
+    //generales
+    body {
+        main {
+            div{
+                div{
+                    div{
+                        .miDisplay {
+                            top: 30%;
+                        }
+                    }
+                }
+            }
+            //css index
+            .contenidoIndex {
+                height: 80vh;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content:space-evenly;
+                .gridBYG, .gridOC, .gridP, .gridV, .gridT, .gridAYO {        
+                    height: 80vh;
+                    width: 15vw;
+                }
+            }
+            //Estructura
+            .estructuraProducto {
+                display: grid;
+                grid-template-areas: 
+                "none vid1"
+                "none interac"
+                "det rel"
+                "crit crit"
+                ;
+            }
+        }        
+    }
+}

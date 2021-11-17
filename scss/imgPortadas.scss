@@ -1,0 +1,36 @@
+$portada:(
+        index: url(../Img/Movile/index.jpg),
+        contacto: url(../Img/Movile/contacto.jpg),
+        destacados: url(../Img/Movile/destacados.jpg),
+        bajosYGuitarras: url(../Img/Movile/bajosYGuitarras.jpg),
+        vientos: url(../Img/Movile/vientos.jpg),
+        otrasCuerdas: url(../Img/Movile/otrasCuerdas.jpg),
+        teclados: url(../Img/Movile/teclados.jpg),
+        percusion: url(../Img/Movile/percusion.jpg),
+        accesorios: url(../Img/Movile/accesorios.jpg),
+); 
+@each $var, $imgPortada in $portada {
+    .#{$var} {
+        background-image: $imgPortada;
+    }
+}
+//media queris
+@media (min-width:1025px){
+    $portada2:(
+        index: url(../Img/FullScreen/index.jpg),
+        contacto: url(../Img/FullScreen/contacto.jpg),
+        destacados: url(../Img/FullScreen/destacados.jpg),
+        bajosYGuitarras: url(../Img/FullScreen/bajosYGuitarras.jpg),
+        vientos: url(../Img/FullScreen/vientos.jpg),
+        otrasCuerdas: url(../Img/FullScreen/otrasCuerdas.jpg),
+        teclados: url(../Img/FullScreen/teclados.jpg),
+        percusion: url(../Img/FullScreen/percusion.jpg),
+        accesorios: url(../Img/FullScreen/accesorios.jpg),
+    );
+
+    @each $var, $imgPortada in $portada2 {
+        .#{$var} {
+            background-image: $imgPortada;
+        }
+    }
+}
