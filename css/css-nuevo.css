@@ -8076,21 +8076,28 @@ body {
     max-width: 100%;
     border-bottom: double 5px;
     border-top: solid 5px; }
-    body footer p {
-      margin-left: 10px;
-      padding: 0px 3px; }
-    body footer .footerLogo {
-      border: double 5px;
-      align-items: center;
-      height: 100px; }
     body footer .footer {
-      width: 80%;
-      display: flex;
+      width: 100%;
+      display: grid;
+      grid-template-areas: "footerL none none" "footerP footerP footerUL";
       flex-flow: row nowrap;
       justify-content: space-around;
       align-items: center; }
-    body footer li img {
-      height: 18px; }
+    body footer .footerLogo {
+      grid-area: footerL;
+      border: double 5px;
+      align-items: center;
+      height: 100px; }
+    body footer p {
+      grid-area: footerP;
+      margin-left: 10px;
+      padding: 0px 3px; }
+    body footer ul {
+      grid-area: footerUL; }
+      body footer ul li {
+        margin: 10px; }
+        body footer ul li img {
+          height: 18px; }
 
 @media (min-width: 1025px) {
   body main div div div .miDisplay {
@@ -8105,7 +8112,9 @@ body {
       width: 15vw; }
   body main .estructuraProducto {
     display: grid;
-    grid-template-areas: "none vid1" "none interac" "det rel" "crit crit"; } }
+    grid-template-areas: "none vid1" "none interac" "det rel" "crit crit"; }
+  body footer .footer {
+    display: flex; } }
 
 body .index {
   background-position-x: 55%; }
@@ -8227,67 +8236,41 @@ body main div div .carousel-item img:hover, body main div div .carousel-item img
   transform: scale(1.1); }
 
 @media (min-width: 1025px) {
-  body {
-    background-position-x: center;
-    background-size: 150vh; }
-    body .index {
-      background-position-x: 55%; }
-    body .contacto {
-      background-position-x: 55%; }
-    body .destacados {
-      background-position-x: 55%; }
-    body .bajosYGuitarras {
-      background-position-x: 55%;
-      background-size: 100vmax; } }
-
-body .otrasCuerdas {
-  background-position-x: 55%;
-  background-size: 100vmax; }
-
-body .teclados {
-  background-position-x: 55%;
-  background-size: 100vmax; }
-
-body .percusion {
-  background-position-x: 55%;
-  background-size: 100vmax; }
-
-body .accesorios {
-  background-position-x: 55%;
-  background-size: 100vmax; }
-
-body main .contenidoIndex .gridBYG {
-  background-image: url(../Img/FullScreen/bajosYGuitarras.jpg);
-  background-position-x: 60%;
-  background-size: 100vmax; }
-
-body main .contenidoIndex .gridOC {
-  background-image: url(../Img/FullScreen/otrasCuerdas.jpg);
-  background-position-x: 7%;
-  background-size: 75vmax; }
-
-body main .contenidoIndex .gridP {
-  background-image: url(../Img/FullScreen/percusion.jpg);
-  background-position-x: 50%;
-  background-size: 70vmax; }
-
-body main .contenidoIndex .gridV {
-  background-image: url(../Img/FullScreen/vientos.jpg);
-  background-position-x: 40%;
-  background-size: 85vmax; }
-
-body main .contenidoIndex .gridT {
-  background-image: url(../Img/FullScreen/teclados.jpg);
-  background-position-x: 25%;
-  background-size: 95vmax; }
-
-body main .contenidoIndex .gridAYO {
-  background-image: url(../Img/FullScreen/accesorios.jpg);
-  background-position-x: 25%;
-  background-size: 110vmax; }
-
-body main .contactoAlinDer {
-  background-image: url(../Img/FullScreen/Decoration1.jpg); }
+  body .bajosYGuitarras {
+    background-size: 100vmax; }
+  body .otrasCuerdas {
+    background-position-x: 55%;
+    background-size: 100vmax; }
+  body .teclados {
+    background-size: 100vmax; }
+  body .percusion {
+    background-size: 100vmax; }
+  body .accesorios {
+    background-size: 100vmax; }
+  body main .contenidoIndex .gridBYG {
+    background-image: url(../Img/FullScreen/bajosYGuitarras.jpg);
+    background-position-x: 60%;
+    background-size: 100vmax; }
+  body main .contenidoIndex .gridOC {
+    background-image: url(../Img/FullScreen/otrasCuerdas.jpg);
+    background-position-x: 7%;
+    background-size: 75vmax; }
+  body main .contenidoIndex .gridP {
+    background-image: url(../Img/FullScreen/percusion.jpg);
+    background-position-x: 50%;
+    background-size: 70vmax; }
+  body main .contenidoIndex .gridV {
+    background-image: url(../Img/FullScreen/vientos.jpg);
+    background-position-x: 40%;
+    background-size: 85vmax; }
+  body main .contenidoIndex .gridT {
+    background-image: url(../Img/FullScreen/teclados.jpg);
+    background-size: 95vmax; }
+  body main .contenidoIndex .gridAYO {
+    background-image: url(../Img/FullScreen/accesorios.jpg);
+    background-size: 110vmax; }
+  body main .contactoAlinDer {
+    background-image: url(../Img/FullScreen/Decoration1.jpg); } }
 
 .index {
   background-image: url(../Img/Movile/index.jpg); }
