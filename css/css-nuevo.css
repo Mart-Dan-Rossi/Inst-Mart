@@ -7923,11 +7923,13 @@ body {
       body main .contenidoInstrumentos .segmentoDestacados {
         background-color: lightgrey; }
         body main .contenidoInstrumentos .segmentoDestacados p {
-          color: firebrick; }
+          color: firebrick;
+          background-color: lightgrey; }
       body main .contenidoInstrumentos .ofertas {
         background-color: lightgrey; }
         body main .contenidoInstrumentos .ofertas p {
-          color: firebrick; }
+          color: firebrick;
+          background-color: lightgrey; }
     body main .estructuraProducto .audioVisualInstrumento {
       background-color: lightgrey; }
     body main .estructuraProducto .infoDetallada, body main .estructuraProducto .productosRelacionados, body main .estructuraProducto .critics {
@@ -8014,7 +8016,7 @@ body {
       max-width: 100%;
       display: grid;
       grid-template-columns: 80vw;
-      grid-template-rows: 20vh 20vh;
+      grid-template-rows: 25vh 25vh;
       row-gap: 5px;
       column-gap: 5px;
       justify-content: center;
@@ -8023,14 +8025,17 @@ body {
       body main .contenidoInstrumentos .ofertas, body main .contenidoInstrumentos .segmentoDestacados {
         position: relative;
         padding: 15px;
-        margin: 0% 1% 1% 1%; }
+        margin: 0% 1% 1% 1%;
+        height: 22vh; }
         body main .contenidoInstrumentos .ofertas p, body main .contenidoInstrumentos .segmentoDestacados p {
           position: absolute;
-          left: 18%;
-          top: 3%;
-          text-align: center; }
+          width: 150px;
+          left: 13%;
+          top: 6%;
+          text-align: center;
+          border-radius: 50%; }
         body main .contenidoInstrumentos .ofertas img, body main .contenidoInstrumentos .segmentoDestacados img {
-          height: 13vh; }
+          height: 110%; }
     body main .estructuraProducto {
       display: grid;
       grid-template-areas: "vid1 vid1" "none interac" "det det" "rel rel" "crit crit";
