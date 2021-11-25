@@ -196,8 +196,8 @@ body {
             width: 100%;
             display: grid;
             grid-template-areas: 
-            "footerL none none"
-            "footerP footerP footerUL";
+            "footerL footerUL"
+            "footerP footerP";
             flex-flow: row nowrap;
             justify-content: space-around;
             align-items: center;
