@@ -1,14 +1,14 @@
 {
   "name": "raiz-flexprimero",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta página está dedicada a simular una página de venta de instrumentos de una supuesta tienda llamada `Instrumentos Martín´ la cuál está concevida para funcionar como práctica de habilidades relacionadas al desarrollo web. Al mismo tiempo vale la pena aclarar que está hecha con la modalidad movile first.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/miscss.scss css/css-nuevo.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Martin D. Rossi",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
