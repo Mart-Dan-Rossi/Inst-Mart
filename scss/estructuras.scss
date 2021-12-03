@@ -1,3 +1,9 @@
+//valores por defecto
+//márgenes para accesibilidad
+$unMarg: 20px;
+$ambosLat: 0 20px;
+
+
 //estructuras
 .iLineB, .iLineB li, footer li {
     display: inline-block;
@@ -34,9 +40,14 @@ body {
         width: 100%;
         .navSection {
             max-width: 100%;
+            div {
+                .breadcrumb {
+                    margin-left: $unMarg;
+                }
+            }
             .navRedes{
                 position: absolute;
-                right: 4px;
+                right: $unMarg;
                 .redes {
                     height: 25px;
                     position: relative;
@@ -58,6 +69,7 @@ body {
         }
     }
     main {
+        margin: $ambosLat;
         max-width: 100vw;
         .leyenda {
             max-width: 60vw;
@@ -174,6 +186,9 @@ body {
     .mainContacto {
         display: flex;
         div {
+            p {
+                margin-right: $unMarg;
+            }
             div {
                 .miForm {
                     width: 300px;
@@ -192,8 +207,12 @@ body {
         max-width: 100%;
         border-bottom: double 5px;
         border-top: solid 5px;
-        .footer {            
-            width: 100%;
+        h2 {
+            margin-left: $unMarg;
+        }
+        .footer {  
+            margin-left: $unMarg;          
+            width: 95%;
             display: grid;
             grid-template-areas: 
             "footerL footerUL"

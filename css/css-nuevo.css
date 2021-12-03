@@ -7982,9 +7982,11 @@ body {
     width: 100%; }
     body header .navSection {
       max-width: 100%; }
+      body header .navSection div .breadcrumb {
+        margin-left: 20px; }
       body header .navSection .navRedes {
         position: absolute;
-        right: 4px; }
+        right: 20px; }
         body header .navSection .navRedes .redes {
           height: 25px;
           position: relative;
@@ -7997,6 +7999,7 @@ body {
         body header .navSection .navbar .container-fluid, body header .navSection .navbar .container-sm, body header .navSection .navbar .container-md, body header .navSection .navbar .container-lg, body header .navSection .navbar .container-xl, body header .navSection .navbar .container-xxl {
           padding-bottom: 10px !important; }
   body main {
+    margin: 0 20px;
     max-width: 100vw; }
     body main .leyenda {
       max-width: 60vw; }
@@ -8071,6 +8074,8 @@ body {
       top: 0%; }
   body .mainContacto {
     display: flex; }
+    body .mainContacto div p {
+      margin-right: 20px; }
     body .mainContacto div div .miForm {
       width: 300px;
       margin-left: 10px; }
@@ -8081,8 +8086,11 @@ body {
     max-width: 100%;
     border-bottom: double 5px;
     border-top: solid 5px; }
+    body footer h2, body footer .h2 {
+      margin-left: 20px; }
     body footer .footer {
-      width: 100%;
+      margin-left: 20px;
+      width: 95%;
       display: grid;
       grid-template-areas: "footerL footerUL" "footerP footerP";
       flex-flow: row nowrap;
