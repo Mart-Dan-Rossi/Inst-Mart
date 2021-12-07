@@ -76,7 +76,10 @@ body {
             }
         }
         .linksTiposInst {
-            font-weight: bold;
+            a{
+                font-weight: bold;
+                text-align: center;
+            }
         }
         //css productos
         .estructuraProducto {

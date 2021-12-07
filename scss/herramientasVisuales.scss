@@ -1,5 +1,6 @@
 //background img
 //movile
+//fondos
 body {
     //portadas
     .index {
@@ -128,24 +129,32 @@ body {
         .linksTiposInst {
             .linkTodosLosDestacados {
                 background-image: url(../Img/Movile/destacados.jpg);
+                background-size: cover;    
             }
             .linkDestacadosBYG {
                 background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+                background-size: cover;
             }
             .linkDestacadosOtrasCuerdas {
                 background-image: url(../Img/Movile/otrasCuerdas.jpg);
+                background-size: cover;
             }
             .linkDestacadosPercusion {
                 background-image: url(../Img/Movile/percusion.jpg);
+                background-size: 100%;
+                background-position-y: 30%;
             }
             .linkDestacadosVientos {
                 background-image: url(../Img/Movile/vientos.jpg);
+                background-size: cover;
             }
             .linkDestacadosTeclados {
                 background-image: url(../Img/Movile/teclados.jpg);
+                background-size: cover;
             }
             .linkDestacadosAccesorios {
                 background-image: url(../Img/Movile/accesorios.jpg);
+                background-size: cover;
             }
         }
     }
@@ -202,6 +211,48 @@ body {
             //css contactanos
             .contactoAlinDer {
                 background-image: url(../Img/FullScreen/Decoration1.jpg);
+            }
+            //destacados
+            .linksTiposInst {
+                .linkTodosLosDestacados {
+                    background-image: url(../Img/Movile/destacados.jpg);
+                    background-position-x: 70%;
+                    background-position-y: 50%;
+                    background-size: 600px;    
+                }
+                .linkDestacadosBYG {
+                    background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+                    background-position-x: 80%;
+                    background-position-y: 60%;
+                    background-size: 750px;
+                }
+                .linkDestacadosOtrasCuerdas {
+                    background-image: url(../Img/Movile/otrasCuerdas.jpg);
+                    background-position-x: 0%;
+                    background-size: 170%;
+                }
+                .linkDestacadosPercusion {
+                    background-image: url(../Img/Movile/percusion.jpg);
+                    background-position-x: 10%;
+                    background-position-y: 60%;
+                    background-size: 400px;
+                }
+                .linkDestacadosVientos {
+                    background-image: url(../Img/Movile/vientos.jpg);
+                    background-position-x: 25%;
+                    background-size: 180%;
+                }
+                .linkDestacadosTeclados {
+                    background-image: url(../Img/Movile/teclados.jpg);
+                    background-position-x: 25%;
+                    background-size: 180%;
+                }
+                .linkDestacadosAccesorios {
+                    background-image: url(../Img/Movile/accesorios.jpg);
+                    background-position-x: 40%;
+                    background-position-y: 100%;
+                    background-size: 500px;
+                }
             }
         }
 

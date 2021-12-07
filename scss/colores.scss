@@ -105,9 +105,13 @@ body {
         }
         .linksTiposInst {
             background-color: $color1;
-            a {
-                color: $color5;
-            }
+             a {
+                 background-color: $color4;
+                 color: $color5;
+             }
+             a:hover, a:active {
+                 color:$color8
+             }        
         }
     }
     //main contactanos

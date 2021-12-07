@@ -182,15 +182,15 @@ body {
             }
         }
         .linksTiposInst {
-            height: 20vh;
+            height: 50vh;
+            min-height: 300px;
             padding: $ambosLat;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 5px;
             .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
-                height: 15vh;
-                width: 14vw;
+                width: 30vw;
             }
         }
     }
@@ -290,6 +290,19 @@ body {
                 "det rel"
                 "crit crit"
                 ;
+            }
+            //Destacados
+            .linksTiposInst {
+                height: 20vh;
+                padding: $ambosLat;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
+                    height: 15vh;
+                    width: 14vw;
+                }
             }
         }
         footer {

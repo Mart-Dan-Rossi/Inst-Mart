@@ -7850,8 +7850,9 @@ body main {
     font-weight: bold; }
   body main div div div .miDisplay p {
     font-size: 0.8rem; }
-  body main .linksTiposInst {
-    font-weight: bold; }
+  body main .linksTiposInst a {
+    font-weight: bold;
+    text-align: center; }
   body main .estructuraProducto .infoDetallada p {
     font-size: 0.8rem; }
   body main .estructuraProducto .infoDetallada h3, body main .estructuraProducto .infoDetallada .h3 {
@@ -7940,7 +7941,10 @@ body {
     body main .linksTiposInst {
       background-color: lightgrey; }
       body main .linksTiposInst a {
+        background-color: rgba(0, 0, 0, 0.678);
         color: firebrick; }
+      body main .linksTiposInst a:hover, body main .linksTiposInst a:active {
+        color: cornflowerblue; }
   body .mainContacto {
     color: white; }
   body a {
@@ -8073,15 +8077,15 @@ body {
       height: 100%;
       top: 0%; }
     body main .linksTiposInst {
-      height: 20vh;
+      height: 50vh;
+      min-height: 300px;
       padding: 0 20px;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center; }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-row-gap: 5px; }
       body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclados, body main .linksTiposInst .linkDestacadosAccesorios {
-        height: 15vh;
-        width: 14vw; }
+        width: 30vw; }
   body .mainContacto {
     display: flex; }
     body .mainContacto div p {
@@ -8136,6 +8140,16 @@ body {
   body main .estructuraProducto {
     display: grid;
     grid-template-areas: "none vid1" "none interac" "det rel" "crit crit"; }
+  body main .linksTiposInst {
+    height: 20vh;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclados, body main .linksTiposInst .linkDestacadosAccesorios {
+      height: 15vh;
+      width: 14vw; }
   body footer .footer {
     display: flex; } }
 
@@ -8261,25 +8275,33 @@ body main div div .carousel-item img:hover, body main div div .carousel-item img
   transform: scale(1.1); }
 
 body main .linksTiposInst .linkTodosLosDestacados {
-  background-image: url(../Img/Movile/destacados.jpg); }
+  background-image: url(../Img/Movile/destacados.jpg);
+  background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosBYG {
-  background-image: url(../Img/Movile/bajosYGuitarras.jpg); }
+  background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+  background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosOtrasCuerdas {
-  background-image: url(../Img/Movile/otrasCuerdas.jpg); }
+  background-image: url(../Img/Movile/otrasCuerdas.jpg);
+  background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosPercusion {
-  background-image: url(../Img/Movile/percusion.jpg); }
+  background-image: url(../Img/Movile/percusion.jpg);
+  background-size: 100%;
+  background-position-y: 30%; }
 
 body main .linksTiposInst .linkDestacadosVientos {
-  background-image: url(../Img/Movile/vientos.jpg); }
+  background-image: url(../Img/Movile/vientos.jpg);
+  background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosTeclados {
-  background-image: url(../Img/Movile/teclados.jpg); }
+  background-image: url(../Img/Movile/teclados.jpg);
+  background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosAccesorios {
-  background-image: url(../Img/Movile/accesorios.jpg); }
+  background-image: url(../Img/Movile/accesorios.jpg);
+  background-size: cover; }
 
 @media (min-width: 1025px) {
   body .bajosYGuitarras {
@@ -8316,7 +8338,39 @@ body main .linksTiposInst .linkDestacadosAccesorios {
     background-image: url(../Img/FullScreen/accesorios.jpg);
     background-size: cover; }
   body main .contactoAlinDer {
-    background-image: url(../Img/FullScreen/Decoration1.jpg); } }
+    background-image: url(../Img/FullScreen/Decoration1.jpg); }
+  body main .linksTiposInst .linkTodosLosDestacados {
+    background-image: url(../Img/Movile/destacados.jpg);
+    background-position-x: 70%;
+    background-position-y: 50%;
+    background-size: 600px; }
+  body main .linksTiposInst .linkDestacadosBYG {
+    background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+    background-position-x: 80%;
+    background-position-y: 60%;
+    background-size: 750px; }
+  body main .linksTiposInst .linkDestacadosOtrasCuerdas {
+    background-image: url(../Img/Movile/otrasCuerdas.jpg);
+    background-position-x: 0%;
+    background-size: 170%; }
+  body main .linksTiposInst .linkDestacadosPercusion {
+    background-image: url(../Img/Movile/percusion.jpg);
+    background-position-x: 10%;
+    background-position-y: 60%;
+    background-size: 400px; }
+  body main .linksTiposInst .linkDestacadosVientos {
+    background-image: url(../Img/Movile/vientos.jpg);
+    background-position-x: 25%;
+    background-size: 180%; }
+  body main .linksTiposInst .linkDestacadosTeclados {
+    background-image: url(../Img/Movile/teclados.jpg);
+    background-position-x: 25%;
+    background-size: 180%; }
+  body main .linksTiposInst .linkDestacadosAccesorios {
+    background-image: url(../Img/Movile/accesorios.jpg);
+    background-position-x: 40%;
+    background-position-y: 100%;
+    background-size: 500px; } }
 
 .index {
   background-image: url(../Img/Movile/index.jpg); }
