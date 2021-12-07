@@ -181,6 +181,18 @@ body {
                 }
             }
         }
+        .linksTiposInst {
+            height: 20vh;
+            padding: $ambosLat;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
+                height: 15vh;
+                width: 14vw;
+            }
+        }
     }
     //contactanos
     .mainContacto {

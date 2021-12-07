@@ -103,6 +103,12 @@ body {
                 }
             }
         }
+        .linksTiposInst {
+            background-color: $color1;
+            a {
+                color: $color5;
+            }
+        }
     }
     //main contactanos
     .mainContacto{

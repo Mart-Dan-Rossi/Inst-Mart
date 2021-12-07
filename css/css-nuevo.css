@@ -7850,28 +7850,24 @@ body main {
     font-weight: bold; }
   body main div div div .miDisplay p {
     font-size: 0.8rem; }
+  body main .linksTiposInst {
+    font-weight: bold; }
+  body main .estructuraProducto .infoDetallada p {
+    font-size: 0.8rem; }
+  body main .estructuraProducto .infoDetallada h3, body main .estructuraProducto .infoDetallada .h3 {
+    font-size: 0.8rem;
+    text-decoration: underline; }
+  body main .estructuraProducto .infoDetallada table tr td {
+    font-weight: bold; }
+  body main .estructuraProducto .basicInterac h2, body main .estructuraProducto .basicInterac .h2 {
+    font-size: 1.2rem; }
+  body main .estructuraProducto .critics h3, body main .estructuraProducto .critics .h3 {
+    text-decoration: underline; }
   body main footer h2, body main footer .h2, body main footer h3, body main footer .h3, body main footer h4, body main footer .h4, body main footer h5, body main footer .h5, body main footer h6, body main footer .h6 {
     font-size: 1rem;
     text-decoration: underline; }
-
-body .estructuraProducto .infoDetallada p {
-  font-size: 0.8rem; }
-
-body .estructuraProducto .infoDetallada h3, body .estructuraProducto .infoDetallada .h3 {
-  font-size: 0.8rem;
-  text-decoration: underline; }
-
-body .estructuraProducto .infoDetallada table tr td {
-  font-weight: bold; }
-
-body .estructuraProducto .basicInterac h2, body .estructuraProducto .basicInterac .h2 {
-  font-size: 1.2rem; }
-
-body .estructuraProducto .critics h3, body .estructuraProducto .critics .h3 {
-  text-decoration: underline; }
-
-body footer .footer p {
-  font-size: 0.8rem; }
+  body main footer .footer p {
+    font-size: 0.8rem; }
 
 @media (min-width: 1025px) {
   body main {
@@ -7941,6 +7937,10 @@ body {
         color: black; }
     body main div div div .miDisplay {
       background-color: rgba(211, 211, 211, 0.568); }
+    body main .linksTiposInst {
+      background-color: lightgrey; }
+      body main .linksTiposInst a {
+        color: firebrick; }
   body .mainContacto {
     color: white; }
   body a {
@@ -8072,6 +8072,16 @@ body {
       width: 30vw;
       height: 100%;
       top: 0%; }
+    body main .linksTiposInst {
+      height: 20vh;
+      padding: 0 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclados, body main .linksTiposInst .linkDestacadosAccesorios {
+        height: 15vh;
+        width: 14vw; }
   body .mainContacto {
     display: flex; }
     body .mainContacto div p {
@@ -8249,6 +8259,27 @@ body main div div .carousel-item img {
 
 body main div div .carousel-item img:hover, body main div div .carousel-item img:active {
   transform: scale(1.1); }
+
+body main .linksTiposInst .linkTodosLosDestacados {
+  background-image: url(../Img/Movile/destacados.jpg); }
+
+body main .linksTiposInst .linkDestacadosBYG {
+  background-image: url(../Img/Movile/bajosYGuitarras.jpg); }
+
+body main .linksTiposInst .linkDestacadosOtrasCuerdas {
+  background-image: url(../Img/Movile/otrasCuerdas.jpg); }
+
+body main .linksTiposInst .linkDestacadosPercusion {
+  background-image: url(../Img/Movile/percusion.jpg); }
+
+body main .linksTiposInst .linkDestacadosVientos {
+  background-image: url(../Img/Movile/vientos.jpg); }
+
+body main .linksTiposInst .linkDestacadosTeclados {
+  background-image: url(../Img/Movile/teclados.jpg); }
+
+body main .linksTiposInst .linkDestacadosAccesorios {
+  background-image: url(../Img/Movile/accesorios.jpg); }
 
 @media (min-width: 1025px) {
   body .bajosYGuitarras {

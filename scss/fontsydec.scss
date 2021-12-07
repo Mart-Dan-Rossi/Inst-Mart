@@ -75,19 +75,15 @@ body {
                 }
             }
         }
-        footer {
-            h2, h3, h4, h5, h6 {
-                font-size: $fs-m;
-                text-decoration: underline;
-            }
+        .linksTiposInst {
+            font-weight: bold;
         }
-    }
-    //css productos
-    .estructuraProducto {
-        .infoDetallada {
-            p {
-                font-size: $fs-s;
-            }
+        //css productos
+        .estructuraProducto {
+            .infoDetallada {
+                p {
+                    font-size: $fs-s;
+                }
             h3 {
                 font-size: $fs-s;
                 text-decoration: underline;
@@ -99,22 +95,27 @@ body {
                     }
                 }
             }
-        }
-        .basicInterac {
-            h2 {
-                font-size: $fs-l;
+            }
+            .basicInterac {
+                h2 {
+                    font-size: $fs-l;
+                }
+            }
+            .critics {
+                h3 {
+                    text-decoration: underline;
+                }
             }
         }
-        .critics {
-            h3 {
+        footer {        
+            h2, h3, h4, h5, h6 {
+                font-size: $fs-m;
                 text-decoration: underline;
             }
-        }
-    }
-    footer {
-        .footer {
-            p {
-                font-size: $fs-s;
+            .footer {
+                p {
+                    font-size: $fs-s;
+                }
             }
         }
     }

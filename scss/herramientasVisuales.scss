@@ -125,6 +125,29 @@ body {
                 }
             }
         }
+        .linksTiposInst {
+            .linkTodosLosDestacados {
+                background-image: url(../Img/Movile/destacados.jpg);
+            }
+            .linkDestacadosBYG {
+                background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+            }
+            .linkDestacadosOtrasCuerdas {
+                background-image: url(../Img/Movile/otrasCuerdas.jpg);
+            }
+            .linkDestacadosPercusion {
+                background-image: url(../Img/Movile/percusion.jpg);
+            }
+            .linkDestacadosVientos {
+                background-image: url(../Img/Movile/vientos.jpg);
+            }
+            .linkDestacadosTeclados {
+                background-image: url(../Img/Movile/teclados.jpg);
+            }
+            .linkDestacadosAccesorios {
+                background-image: url(../Img/Movile/accesorios.jpg);
+            }
+        }
     }
     //media queris
     @media (min-width:1025px){
