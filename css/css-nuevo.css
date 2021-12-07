@@ -8085,7 +8085,8 @@ body {
       grid-template-rows: 1fr 1fr 1fr;
       grid-row-gap: 5px; }
       body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclados, body main .linksTiposInst .linkDestacadosAccesorios {
-        width: 30vw; }
+        width: 30vw;
+        border: rgba(0, 0, 0, 0.678) 4px solid; }
   body .mainContacto {
     display: flex; }
     body .mainContacto div p {

@@ -191,6 +191,7 @@ body {
             grid-row-gap: 5px;
             .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
                 width: 30vw;
+                border: $color4 4px solid;
             }
         }
     }
