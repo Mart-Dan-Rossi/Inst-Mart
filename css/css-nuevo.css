@@ -7925,21 +7925,7 @@ body {
       body main .filtros .mih3 {
         color: grey; }
       body main .filtros .atribFiltros div span {
-        color: rgba(0, 0, 0, 0); }
-
-@keyframes apareceTexto {
-  0% {
-    opacity: 0; }
-  1% {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.671);
-    color: firebrick; }
-  99% {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.671);
-    color: firebrick; }
-  100% {
-    opacity: 0; } }
+        color: firebrick; }
     body main .flexCards .card .card-body {
       color: black; }
     body main .estructuraProducto .audioVisualInstrumento {
@@ -7973,6 +7959,23 @@ body {
       border-color: black; }
     body footer .footer p .linkAContactanos:hover, body footer .footer p .linkAContactanos:active {
       color: cornflowerblue; }
+
+@media (min-width: 1025px) {
+  body main .filtros .atribFiltros div span {
+    color: rgba(0, 0, 0, 0); }
+  @keyframes apareceTexto {
+    0% {
+      opacity: 0; }
+    1% {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.671);
+      color: firebrick; }
+    99% {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.671);
+      color: firebrick; }
+    100% {
+      opacity: 0; } } }
 
 .iLineB, .iLineB li, footer li {
   display: inline-block; }

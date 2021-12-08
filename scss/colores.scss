@@ -72,25 +72,7 @@ body {
             .atribFiltros {
                 div {
                     span {
-                        color: $transparente;
-                        @keyframes apareceTexto {
-                            0% {
-                                opacity: 0;
-                            }
-                            1% {
-                                opacity: 1;
-                                background-color: $color12;
-                                color: $color5;
-                            }
-                            99% {
-                                opacity: 1;
-                                background-color: $color12;
-                                color: $color5;
-                            }
-                            100% {
-                                opacity: 0;
-                            }
-                        }
+                        color: $color5;
                     }
                 }
             }
@@ -159,6 +141,41 @@ body {
             p {
                 .linkAContactanos:hover, .linkAContactanos:active {
                     color: $color8;
+                }
+            }
+        }
+    }
+}
+//media queris
+//Desde Escritorio, pantallas grandes
+@media (min-width:1025px){
+    body {
+        main{
+            .filtros {
+                .atribFiltros {
+                    div {
+                        span {
+                            color: $transparente;
+                            @keyframes apareceTexto {
+                                0% {
+                                    opacity: 0;
+                                }
+                                1% {
+                                    opacity: 1;
+                                    background-color: $color12;
+                                    color: $color5;
+                                }
+                                99% {
+                                    opacity: 1;
+                                    background-color: $color12;
+                                    color: $color5;
+                                }
+                                100% {
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
