@@ -7884,7 +7884,9 @@ body main {
     body main div div div .miDisplay p {
       font-size: 1rem; }
     body main .contenidoIndex {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+    body main .filtros .displayFS div span {
+      font-weight: bold; } }
 
 body {
   color: lightgrey;
@@ -7922,8 +7924,22 @@ body {
       background-color: lightgrey; }
       body main .filtros .mih3 {
         color: grey; }
-      body main .filtros .flexFiltros div span {
-        color: firebrick; }
+      body main .filtros .atribFiltros div span {
+        color: rgba(0, 0, 0, 0); }
+
+@keyframes apareceTexto {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: firebrick; }
+  99% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: firebrick; }
+  100% {
+    opacity: 0; } }
     body main .flexCards .card .card-body {
       color: black; }
     body main .estructuraProducto .audioVisualInstrumento {
@@ -8002,7 +8018,6 @@ body {
         body header .navSection .navbar .container-fluid, body header .navSection .navbar .container-sm, body header .navSection .navbar .container-md, body header .navSection .navbar .container-lg, body header .navSection .navbar .container-xl, body header .navSection .navbar .container-xxl {
           padding-bottom: 10px !important; }
   body main {
-    margin: 0 20px;
     max-width: 100vw; }
     body main p {
       padding: 0 20px; }
@@ -8021,21 +8036,25 @@ body {
       body main .contenidoIndex .gridBYG, body main .contenidoIndex .gridOC, body main .contenidoIndex .gridP, body main .contenidoIndex .gridV, body main .contenidoIndex .gridT, body main .contenidoIndex .gridAYO {
         height: 200px; }
     body main .filtros .mih3 {
-      padding: 0 20px;
-      padding-top: 20px; }
-    body main .filtros .flexFiltros {
+      padding: 20px 10px 0px 10px; }
+    body main .filtros .atribFiltros {
       width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      padding: 20px; }
-      body main .filtros .flexFiltros div {
+      padding: 10px; }
+      body main .filtros .atribFiltros div {
         display: flex;
-        flex-direction: column;
-        justify-content: start; }
-        body main .filtros .flexFiltros div img {
-          height: 30vh;
-          width: 30vh; }
+        flex-direction: column; }
+        body main .filtros .atribFiltros div span {
+          display: block; }
+        body main .filtros .atribFiltros div img {
+          height: 24vw;
+          width: 80vw;
+          padding: 2px; }
+    body main .filtros .displayMovile {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between; }
+    body main .filtros .displayFS {
+      display: none; }
     body main .flexCards {
       width: 100%;
       display: flex;
@@ -8141,6 +8160,24 @@ body {
   body main .estructuraProducto {
     display: grid;
     grid-template-areas: "none vid1" "none interac" "det rel" "crit crit"; }
+  body main .filtros .mih3 {
+    position: relative;
+    top: 10px; }
+  body main .filtros .atribFiltros div span {
+    display: inline-block;
+    position: absolute;
+    padding: 0 20px;
+    height: 18vw;
+    width: 18vw; }
+  body main .filtros .atribFiltros div img {
+    height: 18vw;
+    width: 18vw; }
+  body main .filtros .displayMovile {
+    display: none; }
+  body main .filtros .displayFS {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
   body main .linksTiposInst {
     height: 20vh;
     padding: 0 20px;
@@ -8262,6 +8299,10 @@ body main .contenidoIndex .gridAYO {
 body main .contactoAlinDer img {
   background-image: url(../Img/Movile/Decoration1.jpg);
   background-size: 100%; }
+
+body main .filtros .displayFS div span:hover {
+  animation-name: apareceTexto;
+  animation-duration: 100s; }
 
 body main div div .carousel-item img {
   transition: 0.5s; }

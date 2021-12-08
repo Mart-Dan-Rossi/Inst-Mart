@@ -101,7 +101,18 @@ body {
                 background-image: url(../Img/Movile/Decoration1.jpg);
                 background-size: 100%;
             }            
-        }        
+        }
+        //css instumentos
+        .filtros {
+            .displayFS {
+                div{
+                    span:hover {               
+                        animation-name: apareceTexto;
+                        animation-duration: 100s;
+                    }
+                }
+            }
+        }
         //css destacados
         div {
             div {

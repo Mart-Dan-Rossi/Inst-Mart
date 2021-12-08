@@ -10,6 +10,8 @@ $color8: cornflowerblue;
 $color9: white;
 $color10:rgba(211, 211, 211, 0.568);
 $color11: rgb(36, 36, 36);
+$color12: rgba(0, 0, 0, 0.671);
+$transparente: rgba(0, 0, 0, 0);
 
 body {
     color: $color1;
@@ -67,10 +69,28 @@ body {
             .mih3 {
                 color: $color3;
             }
-            .flexFiltros {
+            .atribFiltros {
                 div {
                     span {
-                        color: $color5;
+                        color: $transparente;
+                        @keyframes apareceTexto {
+                            0% {
+                                opacity: 0;
+                            }
+                            1% {
+                                opacity: 1;
+                                background-color: $color12;
+                                color: $color5;
+                            }
+                            99% {
+                                opacity: 1;
+                                background-color: $color12;
+                                color: $color5;
+                            }
+                            100% {
+                                opacity: 0;
+                            }
+                        }
                     }
                 }
             }

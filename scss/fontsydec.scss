@@ -153,6 +153,16 @@ body {
             .contenidoIndex {
                 font-size: $fs-xxl;
             }
+            //css istrumentos
+            .filtros {
+                .displayFS {
+                    div {
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -70,7 +70,6 @@ body {
         }
     }
     main {
-        margin: $ambosLat;
         max-width: 100vw;
         p {
             padding: $ambosLat;
@@ -96,24 +95,31 @@ body {
         //css instrumentos
         .filtros {
             .mih3 {
-                padding: $ambosLat;
-                padding-top: 20px;
+                padding: 20px 10px 0px 10px;
             }
-            .flexFiltros {
+            .atribFiltros {
                 width: 100%;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-                padding: 20px;
+                padding: 10px;
                 div {
                     display: flex;
                     flex-direction: column;
-                    justify-content: start;
+                    span {
+                        display: block
+                    }
                     img {
-                        height: 30vh;
-                        width: 30vh;
+                        height: 24vw;
+                        width: 80vw;
+                        padding: 2px;
                     }
                 }
+            }
+            .displayMovile {                
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+            }
+            .displayFS {
+                display: none;
             }
         }
         .flexCards {
@@ -298,6 +304,36 @@ body {
                 "det rel"
                 "crit crit"
                 ;
+            }
+            //css instrumentos
+            .filtros {
+                .mih3 {                
+                    position: relative;
+                    top: 10px;                    
+                }
+                .atribFiltros {
+                    div {
+                        span {
+                            display: inline-block;
+                            position: absolute;
+                            padding: $ambosLat;
+                            height: 18vw;
+                            width: 18vw;
+                        }
+                        img {
+                            height: 18vw;
+                            width: 18vw;
+                        }
+                    }
+                }
+                .displayMovile {                
+                    display: none;
+                }
+                .displayFS {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                }
             }
             //Destacados
             .linksTiposInst {
