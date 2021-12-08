@@ -2,6 +2,7 @@
 //márgenes para accesibilidad
 $unMarg: 20px;
 $ambosLat: 0 20px;
+$allMarg: 20px 20px;
 
 
 //estructuras
@@ -71,6 +72,9 @@ body {
     main {
         margin: $ambosLat;
         max-width: 100vw;
+        p {
+            padding: $ambosLat;
+        }
         .leyenda {
             max-width: 60vw;
         }
@@ -90,7 +94,37 @@ body {
             }
         }
         //css instrumentos
-        
+        .filtros {
+            .mih3 {
+                padding: $ambosLat;
+                padding-top: 20px;
+            }
+            .flexFiltros {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                padding: 20px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    img {
+                        height: 30vh;
+                        width: 30vh;
+                    }
+                }
+            }
+        }
+        .flexCards {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            a {
+                margin: $allMarg;
+            }
+        }
         //Productos
         .estructuraProducto {
             display: grid;

@@ -7821,6 +7821,9 @@ a {
 ul {
   list-style: none; }
 
+.bold {
+  font-weight: bold; }
+
 .linkAContactanos {
   text-decoration: underline !important; }
 
@@ -7850,6 +7853,9 @@ body main {
   body main .linksTiposInst a {
     font-weight: bold;
     text-align: center; }
+  body main .filtros .mih3 {
+    font-size: 1.4rem;
+    text-decoration: underline; }
   body main .estructuraProducto .infoDetallada p {
     font-size: 0.8rem; }
   body main .estructuraProducto .infoDetallada h3, body main .estructuraProducto .infoDetallada .h3 {
@@ -7904,7 +7910,7 @@ body {
     body .navSection nav li a:hover, body .navSection nav li a:active, body .navSection nav li p:hover, body .navSection nav li p:active {
       background-color: rgba(128, 128, 128, 0.712); }
   body main {
-    background-image: linear-gradient(black 10%, grey, black 90%); }
+    background-image: linear-gradient(#242424 10%, grey, #242424 90%); }
     body main .contenidoIndex {
       background-color: lightgrey;
       border-color: black; }
@@ -7912,6 +7918,14 @@ body {
         color: rgba(255, 0, 0, 0.842); }
       body main .contenidoIndex .gridBYG:hover, body main .contenidoIndex .gridOC:hover, body main .contenidoIndex .gridP:hover, body main .contenidoIndex .gridV:hover, body main .contenidoIndex .gridT:hover, body main .contenidoIndex .gridAYO:hover, body main .contenidoIndex .gridBYG:active, body main .contenidoIndex .gridOC:active, body main .contenidoIndex .gridP:active, body main .contenidoIndex .gridV:active, body main .contenidoIndex .gridT:active, body main .contenidoIndex .gridAYO:active {
         color: cornflowerblue; }
+    body main .filtros {
+      background-color: lightgrey; }
+      body main .filtros .mih3 {
+        color: grey; }
+      body main .filtros .flexFiltros div span {
+        color: firebrick; }
+    body main .flexCards .card .card-body {
+      color: black; }
     body main .estructuraProducto .audioVisualInstrumento {
       background-color: lightgrey; }
     body main .estructuraProducto .infoDetallada, body main .estructuraProducto .productosRelacionados, body main .estructuraProducto .critics {
@@ -7990,6 +8004,8 @@ body {
   body main {
     margin: 0 20px;
     max-width: 100vw; }
+    body main p {
+      padding: 0 20px; }
     body main .leyenda {
       max-width: 60vw; }
     body main .contenidoIndex {
@@ -8004,6 +8020,29 @@ body {
       border: ridge; }
       body main .contenidoIndex .gridBYG, body main .contenidoIndex .gridOC, body main .contenidoIndex .gridP, body main .contenidoIndex .gridV, body main .contenidoIndex .gridT, body main .contenidoIndex .gridAYO {
         height: 200px; }
+    body main .filtros .mih3 {
+      padding: 0 20px;
+      padding-top: 20px; }
+    body main .filtros .flexFiltros {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 20px; }
+      body main .filtros .flexFiltros div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start; }
+        body main .filtros .flexFiltros div img {
+          height: 30vh;
+          width: 30vh; }
+    body main .flexCards {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      body main .flexCards a {
+        margin: 20px 20px; }
     body main .estructuraProducto {
       display: grid;
       grid-template-areas: "vid1 vid1" "none interac" "det det" "rel rel" "crit crit";
@@ -8363,7 +8402,7 @@ body main .linksTiposInst .linkDestacadosAccesorios {
   .destacados {
     background-image: url(../Img/FullScreen/destacados.jpg); }
   .bajosYGuitarras {
-    background-image: url(../Img/FullScreen/bajosYGuitarras.jpg); }
+    background-image: url(../Img/FullScreen/bajosYGuitarras1.jpg); }
   .vientos {
     background-image: url(../Img/FullScreen/vientos.jpg); }
   .otrasCuerdas {

@@ -9,6 +9,7 @@ $color7: rgba(255, 0, 0, 0.842);
 $color8: cornflowerblue;
 $color9: white;
 $color10:rgba(211, 211, 211, 0.568);
+$color11: rgb(36, 36, 36);
 
 body {
     color: $color1;
@@ -48,7 +49,7 @@ body {
         }
     }
     main {
-        background-image: linear-gradient($color2 10%, $color3, $color2 90%);
+        background-image: linear-gradient($color11 10%, $color3, $color11 90%);
         //main index
         .contenidoIndex {            
             background-color: $color1;
@@ -60,7 +61,27 @@ body {
                 color: $color8;
             }
         }
-        
+        //css instrumentos
+        .filtros {
+            background-color: $color1;
+            .mih3 {
+                color: $color3;
+            }
+            .flexFiltros {
+                div {
+                    span {
+                        color: $color5;
+                    }
+                }
+            }
+        }
+        .flexCards {
+            .card {
+                .card-body {
+                    color: $color2;
+                }
+            }
+        }
         //main productos
         .estructuraProducto {
             .audioVisualInstrumento {
