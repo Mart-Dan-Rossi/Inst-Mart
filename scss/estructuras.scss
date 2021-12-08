@@ -90,34 +90,7 @@ body {
             }
         }
         //css instrumentos
-        .contenidoInstrumentos {
-            max-width: 100%;
-            display: grid;    
-            grid-template-columns: 80vw;
-            grid-template-rows: 25vh 25vh;
-            row-gap: 5px;
-            column-gap: 5px;
-            justify-content: center;
-            border-width: 5px 5px 10px 5px;
-            border-style: ridge;
-            .ofertas, .segmentoDestacados {
-                position: relative;
-                padding: 15px;
-                margin: 0% 1% 1% 1%;
-                height: 22vh;
-                p {
-                    position: absolute;
-                    width: 150px;
-                    left: 13%;
-                    top: 6%;
-                    text-align: center;
-                    border-radius: 50%;
-                }
-                img {
-                   height: 110%; 
-                }
-            }
-        }
+        
         //Productos
         .estructuraProducto {
             display: grid;

@@ -60,23 +60,7 @@ body {
                 color: $color8;
             }
         }
-        .contenidoInstrumentos {
-            border-color: $color1;
-            .segmentoDestacados {
-                background-color: $color1;
-                p {
-                    color: $color5;
-                    background-color: $color1;
-                }
-            }
-            .ofertas {
-                background-color: $color1;
-                p {
-                    color: $color5;
-                    background-color: $color1;
-                }
-            }
-        }
+        
         //main productos
         .estructuraProducto {
             .audioVisualInstrumento {
