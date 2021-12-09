@@ -100,6 +100,9 @@ body {
             .atribFiltros {
                 width: 100%;
                 padding: 10px;
+                .resaltar {
+                    border: double 5px rgba(218, 165, 32, 0.801);
+                }
                 div {
                     display: flex;
                     flex-direction: column;
