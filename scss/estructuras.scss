@@ -101,7 +101,9 @@ body {
                 width: 100%;
                 padding: 10px;
                 .resaltar {
-                    border: double 5px rgba(218, 165, 32, 0.801);
+                    border: double $color5 5px;
+                    position: relative;
+                    bottom: 5px;
                 }
                 div {
                     display: flex;

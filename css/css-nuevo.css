@@ -8044,6 +8044,10 @@ body {
     body main .filtros .atribFiltros {
       width: 100%;
       padding: 10px; }
+      body main .filtros .atribFiltros .resaltar {
+        border: double firebrick 5px;
+        position: relative;
+        bottom: 5px; }
       body main .filtros .atribFiltros div {
         display: flex;
         flex-direction: column; }
