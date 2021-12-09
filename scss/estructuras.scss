@@ -13,7 +13,7 @@ body {
     max-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
-    .index, .contacto, .destacados, .bajosYGuitarras, .vientos, .otrasCuerdas, .teclados, .percusion, .accesorios {
+    .index, .contacto, .destacados, .bajosYGuitarras, .vientos, .otrasCuerdas, .teclas, .percusion, .accesorios {
         height: 70vh;
         max-width: 100vw;
         margin-bottom: 3px;
@@ -202,7 +202,7 @@ body {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             grid-row-gap: 5px;
-            .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
+            .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclas, .linkDestacadosAccesorios {
                 width: 30vw;
                 border: $color4 4px solid;
             }
@@ -343,7 +343,7 @@ body {
                 flex-flow: row nowrap;
                 justify-content: space-between;
                 align-items: center;
-                .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclados, .linkDestacadosAccesorios {
+                .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclas, .linkDestacadosAccesorios {
                     height: 15vh;
                     width: 14vw;
                 }

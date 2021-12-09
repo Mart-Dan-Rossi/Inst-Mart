@@ -5,7 +5,7 @@ $portada:(
         bajosYGuitarras: url(../Img/Movile/bajosYGuitarras.jpg),
         vientos: url(../Img/Movile/vientos.jpg),
         otrasCuerdas: url(../Img/Movile/otrasCuerdas.jpg),
-        teclados: url(../Img/Movile/teclados.jpg),
+        teclas: url(../Img/Movile/teclas.jpg),
         percusion: url(../Img/Movile/percusion.jpg),
         accesorios: url(../Img/Movile/accesorios.jpg),
 ); 
@@ -23,9 +23,9 @@ $portada:(
         bajosYGuitarras: url(../Img/FullScreen/bajosYGuitarras1.jpg),
         vientos: url(../Img/FullScreen/vientos.jpg),
         otrasCuerdas: url(../Img/FullScreen/otrasCuerdas.jpg),
-        teclados: url(../Img/FullScreen/teclados.jpg),
+        teclas: url(../Img/FullScreen/teclas.jpg),
         percusion: url(../Img/FullScreen/percusion.jpg),
-        accesorios: url(../Img/FullScreen/accesorios.jpg),
+        accesorios: url(../Img/FullScreen/accesorios1.jpg),
     );
 
     @each $var, $imgPortada in $portada2 {

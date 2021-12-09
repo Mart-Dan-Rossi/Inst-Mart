@@ -10,7 +10,7 @@ $color8: cornflowerblue;
 $color9: white;
 $color10:rgba(211, 211, 211, 0.568);
 $color11: rgb(36, 36, 36);
-$color12: rgba(0, 0, 0, 0.671);
+$color12: rgba(0, 0, 0, 0.795);
 $transparente: rgba(0, 0, 0, 0);
 
 body {
@@ -32,7 +32,7 @@ body {
                 opacity: 1;
             }
         }
-        .index span, .contacto span, .destacados span, .bajosYGuitarras span, .otrasCuerdas span, .vientos span, .percusion span, .teclados span, .accesorios span {
+        .index span, .contacto span, .destacados span, .bajosYGuitarras span, .otrasCuerdas span, .vientos span, .percusion span, .teclas span, .accesorios span {
             background-color: $color4;
             color: $color5;
         }

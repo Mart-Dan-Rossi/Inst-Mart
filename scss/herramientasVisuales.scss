@@ -26,7 +26,7 @@ body {
         background-position-x: 30%;
         background-size: 120vmax;
     }    
-    .teclados {
+    .teclas {
         background-position-x: 55%;
         background-size: 120vmax;
     }    
@@ -38,7 +38,7 @@ body {
         background-position-x: 55%;
     }
     //--------
-    @each $var in index, contacto, destacados, bajosYGuitarras, vientos, otrasCuerdas, teclados, percusion, accesorios {
+    @each $var in index, contacto, destacados, bajosYGuitarras, vientos, otrasCuerdas, teclas, percusion, accesorios {
         .#{$var }{
             a {
                 .logo {
@@ -84,7 +84,7 @@ body {
                 background-size: 180%;
             }
             .gridT {
-                background-image: url(../Img/Movile/teclados.jpg);
+                background-image: url(../Img/Movile/teclas.jpg);
                 background-position-x: 25%;
                 background-size: 180%;
             }
@@ -148,8 +148,8 @@ body {
                 background-image: url(../Img/Movile/vientos.jpg);
                 background-size: cover;
             }
-            .linkDestacadosTeclados {
-                background-image: url(../Img/Movile/teclados.jpg);
+            .linkDestacadosTeclas {
+                background-image: url(../Img/Movile/teclas.jpg);
                 background-size: cover;
             }
             .linkDestacadosAccesorios {
@@ -168,7 +168,7 @@ body {
             background-position-x: 55%;
             background-size: 100vmax;
         }    
-        .teclados {
+        .teclas {
             background-size: 100vmax;
         }    
         .percusion {
@@ -200,7 +200,7 @@ body {
                     background-size: 85vmax;
                 }            
                 .gridT {
-                    background-image: url(../Img/FullScreen/teclados.jpg);
+                    background-image: url(../Img/FullScreen/teclas.jpg);
                     background-size: 95vmax;
                 }            
                 .gridAYO {
@@ -242,8 +242,8 @@ body {
                     background-position-x: 25%;
                     background-size: 180%;
                 }
-                .linkDestacadosTeclados {
-                    background-image: url(../Img/Movile/teclados.jpg);
+                .linkDestacadosTeclas {
+                    background-image: url(../Img/Movile/teclas.jpg);
                     background-position-x: 25%;
                     background-size: 180%;
                 }
