@@ -27,6 +27,7 @@ ul {
 }
 
 //demás
+//css generales
 .linkAContactanos {
     text-decoration: underline !important;
 }
@@ -107,12 +108,8 @@ body {
                     font-size: $fs-l;
                 }
             }
-            .critics {
-                h3 {
-                    text-decoration: underline;
-                }
-            }
         }
+        //footers
         footer {        
             h2, h3, h4, h5, h6 {
                 font-size: $fs-m;

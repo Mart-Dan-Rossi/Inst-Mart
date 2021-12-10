@@ -139,17 +139,12 @@ body {
         //Productos
         .estructuraProducto {
             display: grid;
-            grid-template-areas: 
-            "vid1 vid1"
+            grid-template-areas:
             "none interac"
             "det det"
             "rel rel"
-            "crit crit"
             ;
-            max-width: 100vw;
-            .vid1 {
-                grid-area: vid1;
-            }            
+            max-width: 100vw;         
             .basicInterac {
                 grid-area: interac;
             }            
@@ -158,24 +153,11 @@ body {
             }            
             .productosRelacionados {
                 grid-area: rel;
-            }            
-            .critics {
-                grid-area: crit;
-            }
-            .audioVisualInstrumento {
-                margin: 5px 0px;
-                padding: 10px 0px;
-                position: relative;
-                max-width: 50vw;
             }
             .basicInterac {
                 p, h2 {
                     text-align: right;
                 }
-            }
-            .critics {
-                position: relative;
-                margin: 5px 0px;
             }
             .infoDetallada {
                 th {
@@ -300,14 +282,13 @@ body {
                     width: 15vw;
                 }
             }
-            //Estructura
+            //css productos
             .estructuraProducto {
                 display: grid;
-                grid-template-areas: 
-                "none vid1"
+                grid-template-areas:
                 "none interac"
-                "det rel"
-                "crit crit"
+                "det det"
+                "rel rel"
                 ;
             }
             //css instrumentos

@@ -86,10 +86,7 @@ body {
         }
         //main productos
         .estructuraProducto {
-            .audioVisualInstrumento {
-                background-color: $color1;
-            }
-            .infoDetallada, .productosRelacionados, .critics {
+            .infoDetallada, .productosRelacionados {
                 background-color: $color1;
                 color: $color2;
                 th {

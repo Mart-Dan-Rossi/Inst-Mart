@@ -7865,8 +7865,6 @@ body main {
     font-weight: bold; }
   body main .estructuraProducto .basicInterac h2, body main .estructuraProducto .basicInterac .h2 {
     font-size: 1.2rem; }
-  body main .estructuraProducto .critics h3, body main .estructuraProducto .critics .h3 {
-    text-decoration: underline; }
   body main footer h2, body main footer .h2, body main footer h3, body main footer .h3, body main footer h4, body main footer .h4, body main footer h5, body main footer .h5, body main footer h6, body main footer .h6 {
     font-size: 1rem;
     text-decoration: underline; }
@@ -7929,14 +7927,12 @@ body {
         color: firebrick; }
     body main .flexCards .card .card-body {
       color: black; }
-    body main .estructuraProducto .audioVisualInstrumento {
-      background-color: lightgrey; }
-    body main .estructuraProducto .infoDetallada, body main .estructuraProducto .productosRelacionados, body main .estructuraProducto .critics {
+    body main .estructuraProducto .infoDetallada, body main .estructuraProducto .productosRelacionados {
       background-color: lightgrey;
       color: black; }
-      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .productosRelacionados th, body main .estructuraProducto .critics th {
+      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .productosRelacionados th {
         background-color: grey; }
-      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .infoDetallada td, body main .estructuraProducto .productosRelacionados th, body main .estructuraProducto .productosRelacionados td, body main .estructuraProducto .critics th, body main .estructuraProducto .critics td {
+      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .infoDetallada td, body main .estructuraProducto .productosRelacionados th, body main .estructuraProducto .productosRelacionados td {
         color: black; }
     body main div div div .miDisplay {
       background-color: rgba(211, 211, 211, 0.568); }
@@ -8072,28 +8068,16 @@ body {
         margin: 20px 20px; }
     body main .estructuraProducto {
       display: grid;
-      grid-template-areas: "vid1 vid1" "none interac" "det det" "rel rel" "crit crit";
+      grid-template-areas: "none interac" "det det" "rel rel";
       max-width: 100vw; }
-      body main .estructuraProducto .vid1 {
-        grid-area: vid1; }
       body main .estructuraProducto .basicInterac {
         grid-area: interac; }
       body main .estructuraProducto .infoDetallada {
         grid-area: det; }
       body main .estructuraProducto .productosRelacionados {
         grid-area: rel; }
-      body main .estructuraProducto .critics {
-        grid-area: crit; }
-      body main .estructuraProducto .audioVisualInstrumento {
-        margin: 5px 0px;
-        padding: 10px 0px;
-        position: relative;
-        max-width: 50vw; }
       body main .estructuraProducto .basicInterac p, body main .estructuraProducto .basicInterac h2, body main .estructuraProducto .basicInterac .h2 {
         text-align: right; }
-      body main .estructuraProducto .critics {
-        position: relative;
-        margin: 5px 0px; }
       body main .estructuraProducto .infoDetallada th {
         border: 3px solid; }
       body main .estructuraProducto .infoDetallada td {
@@ -8167,7 +8151,7 @@ body {
       width: 15vw; }
   body main .estructuraProducto {
     display: grid;
-    grid-template-areas: "none vid1" "none interac" "det rel" "crit crit"; }
+    grid-template-areas: "none interac" "det det" "rel rel"; }
   body main .filtros .mih3 {
     position: relative;
     top: 10px; }
