@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital,wght@1,200&display=swap');
 //----------------------------------
 //Tamaños de letra
-$fs-m: 1rem;
-$fs-sr: $fs-m - 0.3;
-$fs-s: $fs-m - 0.2;
-$fs-l: $fs-m + 0.2;
-$fs-xl: $fs-m + 0.4;
-$fs-xxl: $fs-m + 0.6;
+$fs-m: 1.2rem;
+$fs-sr: $fs-m - 0.2;
+$fs-s: $fs-m - 0.1;
+$fs-l: $fs-m + 0.1;
+$fs-xl: $fs-m + 0.2;
+$fs-xxl: $fs-m + 0.3;
 
 //font-family
 $ff-1: 'Roboto Mono', monospace;
@@ -87,25 +87,39 @@ body {
             
         //css productos
         .estructuraProducto {
+            .infoBasica {
+                h3 {
+                    font-size: $fs-m;
+                    text-decoration: underline;
+                }
+                table {
+                    tr {
+                        td {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
             .infoDetallada {
                 p {
                     font-size: $fs-s;
                 }
-            h3 {
-                font-size: $fs-s;
-                text-decoration: underline;
-            }
-            table {
-                tr {
-                    td {
-                        font-weight: bold;
+                ul {
+                    list-style: circle;
+                    li {
+                        font-size: $fs-sr;
                     }
                 }
             }
-            }
             .basicInterac {
-                h2 {
-                    font-size: $fs-l;
+                .recuadrar{
+                    p, h2 {
+                        font-size: $fs-l;
+                        font-weight: bolder;
+                    }
+                    p {
+                       font-weight: bold; 
+                    }
                 }
             }
         }

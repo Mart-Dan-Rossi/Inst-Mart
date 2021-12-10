@@ -137,34 +137,52 @@ body {
             }
         }
         //Productos
+        .paraCentrar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        img {
+                            height: 70vh;
+                            width: 70vh;
+                        }
+                    }
+                }
+            }
+        }
         .estructuraProducto {
-            display: grid;
-            grid-template-areas:
-            "none interac"
-            "det det"
-            "rel rel"
-            ;
-            max-width: 100vw;         
+            display: flex;
+            flex-flow: column nowrap;
+            max-width: 100vw;
+            border: 3px $color2 solid;
             .basicInterac {
-                grid-area: interac;
-            }            
-            .infoDetallada {
-                grid-area: det;
-            }            
-            .productosRelacionados {
-                grid-area: rel;
-            }
-            .basicInterac {
-                p, h2 {
-                    text-align: right;
+                .recuadrar {
+                    position: relative;
+                    bottom: 3px;
+                    border: 3px $color2 solid;
+                    p, h2 {
+                        text-align: right;
+                        margin: $allMarg;
+                    }
                 }
             }
             .infoDetallada {
-                th {
-                    border: 3px solid;
+                ul {
+                    margin:$allMarg
                 }
-                td {
-                    border: 1px solid;
+            }
+            .infoBasica {
+                p, h3, table {
+                    margin: 20px;
+                }
+                tr{                    
+                    td {
+                        border: 1px solid;
+                        padding: $allMarg;
+                    }
                 }
             }
         }
@@ -286,10 +304,26 @@ body {
             .estructuraProducto {
                 display: grid;
                 grid-template-areas:
-                "none interac"
-                "det det"
-                "rel rel"
+                "foto foto foto foto"
+                "info info info interac"
+                "det det det det"
+                "rel rel rel rel"
                 ;
+                .carousel {
+                    grid-area: foto;
+                }
+                .basicInterac {
+                    grid-area: interac;
+                }
+                .infoBasica {
+                    grid-area: info;
+                }
+                .infoDetallada {
+                    grid-area: det;
+                }            
+                .productosRelacionados {
+                    grid-area: rel;
+                }
             }
             //css instrumentos
             .filtros {

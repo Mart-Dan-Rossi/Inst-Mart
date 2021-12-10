@@ -7839,53 +7839,60 @@ body header {
 
 body main {
   font-family: "Roboto Mono", monospace;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
   body main .leyenda {
-    font-size: 0.7rem; }
+    font-size: 1rem; }
   body main .contenidoIndex {
     font-weight: bolder;
     font-size: 1.4rem; }
   body main div div div .miDisplay .h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold; }
   body main div div div .miDisplay p {
-    font-size: 0.8rem; }
+    font-size: 1.1rem; }
   body main .linksTiposInst a {
     font-weight: bold;
     text-align: center; }
   body main .filtros .mih3 {
     font-size: 1.4rem;
     text-decoration: underline; }
-  body main .estructuraProducto .infoDetallada p {
-    font-size: 0.8rem; }
-  body main .estructuraProducto .infoDetallada h3, body main .estructuraProducto .infoDetallada .h3 {
-    font-size: 0.8rem;
+  body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3 {
+    font-size: 1.2rem;
     text-decoration: underline; }
-  body main .estructuraProducto .infoDetallada table tr td {
+  body main .estructuraProducto .infoBasica table tr td {
     font-weight: bold; }
-  body main .estructuraProducto .basicInterac h2, body main .estructuraProducto .basicInterac .h2 {
-    font-size: 1.2rem; }
+  body main .estructuraProducto .infoDetallada p {
+    font-size: 1.1rem; }
+  body main .estructuraProducto .infoDetallada ul {
+    list-style: circle; }
+    body main .estructuraProducto .infoDetallada ul li {
+      font-size: 1rem; }
+  body main .estructuraProducto .basicInterac .recuadrar p, body main .estructuraProducto .basicInterac .recuadrar h2, body main .estructuraProducto .basicInterac .recuadrar .h2 {
+    font-size: 1.3rem;
+    font-weight: bolder; }
+  body main .estructuraProducto .basicInterac .recuadrar p {
+    font-weight: bold; }
   body main footer h2, body main footer .h2, body main footer h3, body main footer .h3, body main footer h4, body main footer .h4, body main footer h5, body main footer .h5, body main footer h6, body main footer .h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: underline; }
   body main footer .footer p {
-    font-size: 0.8rem; }
+    font-size: 1.1rem; }
 
 @media (min-width: 1025px) {
   body main {
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
     body main .leyenda {
-      font-size: 0.8rem; }
+      font-size: 1.1rem; }
     body main div div div .miDisplay .h5 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: bold; }
     body main div div div .miDisplay p {
-      font-size: 1rem; }
+      font-size: 1.2rem; }
     body main .contenidoIndex {
-      font-size: 1.6rem; }
+      font-size: 1.5rem; }
     body main .filtros .displayFS div span {
       font-weight: 900;
-      font-size: 1.6rem; } }
+      font-size: 1.5rem; } }
 
 body {
   color: lightgrey;
@@ -7927,12 +7934,15 @@ body {
         color: firebrick; }
     body main .flexCards .card .card-body {
       color: black; }
-    body main .estructuraProducto .infoDetallada, body main .estructuraProducto .productosRelacionados {
-      background-color: lightgrey;
-      color: black; }
-      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .productosRelacionados th {
-        background-color: grey; }
-      body main .estructuraProducto .infoDetallada th, body main .estructuraProducto .infoDetallada td, body main .estructuraProducto .productosRelacionados th, body main .estructuraProducto .productosRelacionados td {
+    body main .estructuraProducto {
+      background-color: lightgrey; }
+      body main .estructuraProducto .basicInterac .recuadrar {
+        background-color: white; }
+      body main .estructuraProducto .infoBasica, body main .estructuraProducto .productosRelacionados, body main .estructuraProducto .basicInterac {
+        color: black; }
+        body main .estructuraProducto .infoBasica tr td:first-child, body main .estructuraProducto .productosRelacionados tr td:first-child, body main .estructuraProducto .basicInterac tr td:first-child {
+          background-color: grey; }
+      body main .estructuraProducto .infoDetallada {
         color: black; }
     body main div div div .miDisplay {
       background-color: rgba(211, 211, 211, 0.568); }
@@ -8066,22 +8076,33 @@ body {
       justify-content: space-around; }
       body main .flexCards a {
         margin: 20px 20px; }
+    body main .paraCentrar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white; }
+      body main .paraCentrar .carousel .carousel-inner .carousel-item img {
+        height: 70vh;
+        width: 70vh; }
     body main .estructuraProducto {
-      display: grid;
-      grid-template-areas: "none interac" "det det" "rel rel";
-      max-width: 100vw; }
-      body main .estructuraProducto .basicInterac {
-        grid-area: interac; }
-      body main .estructuraProducto .infoDetallada {
-        grid-area: det; }
-      body main .estructuraProducto .productosRelacionados {
-        grid-area: rel; }
-      body main .estructuraProducto .basicInterac p, body main .estructuraProducto .basicInterac h2, body main .estructuraProducto .basicInterac .h2 {
-        text-align: right; }
-      body main .estructuraProducto .infoDetallada th {
-        border: 3px solid; }
-      body main .estructuraProducto .infoDetallada td {
-        border: 1px solid; }
+      display: flex;
+      flex-flow: column nowrap;
+      max-width: 100vw;
+      border: 3px black solid; }
+      body main .estructuraProducto .basicInterac .recuadrar {
+        position: relative;
+        bottom: 3px;
+        border: 3px black solid; }
+        body main .estructuraProducto .basicInterac .recuadrar p, body main .estructuraProducto .basicInterac .recuadrar h2, body main .estructuraProducto .basicInterac .recuadrar .h2 {
+          text-align: right;
+          margin: 20px 20px; }
+      body main .estructuraProducto .infoDetallada ul {
+        margin: 20px 20px; }
+      body main .estructuraProducto .infoBasica p, body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3, body main .estructuraProducto .infoBasica table {
+        margin: 20px; }
+      body main .estructuraProducto .infoBasica tr td {
+        border: 1px solid;
+        padding: 20px 20px; }
     body main div div div .miDisplay {
       position: absolute;
       width: 30vw;
@@ -8151,7 +8172,17 @@ body {
       width: 15vw; }
   body main .estructuraProducto {
     display: grid;
-    grid-template-areas: "none interac" "det det" "rel rel"; }
+    grid-template-areas: "foto foto foto foto" "info info info interac" "det det det det" "rel rel rel rel"; }
+    body main .estructuraProducto .carousel {
+      grid-area: foto; }
+    body main .estructuraProducto .basicInterac {
+      grid-area: interac; }
+    body main .estructuraProducto .infoBasica {
+      grid-area: info; }
+    body main .estructuraProducto .infoDetallada {
+      grid-area: det; }
+    body main .estructuraProducto .productosRelacionados {
+      grid-area: rel; }
   body main .filtros .mih3 {
     position: relative;
     top: 10px; }

@@ -86,15 +86,22 @@ body {
         }
         //main productos
         .estructuraProducto {
-            .infoDetallada, .productosRelacionados {
-                background-color: $color1;
+            background-color: $color1;
+            .basicInterac {
+                .recuadrar {
+                    background-color: $color9;
+                }
+            }
+            .infoBasica, .productosRelacionados, .basicInterac {
                 color: $color2;
-                th {
-                    background-color: $color3;
+                tr{
+                    td:first-child {
+                        background-color: $color3;
+                    }
                 }
-                th, td {
-                    color: $color2;
-                }
+            }
+            .infoDetallada {
+                color: $color2;
             }
         }
         //main destacados
