@@ -7858,11 +7858,13 @@ body main {
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3 {
     font-size: 1.2rem;
+    font-weight: bolder;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica table tr td {
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada p {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    font-weight: bold; }
   body main .estructuraProducto .infoDetallada ul {
     list-style: circle; }
     body main .estructuraProducto .infoDetallada ul li {

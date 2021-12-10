@@ -90,6 +90,7 @@ body {
             .infoBasica {
                 h3 {
                     font-size: $fs-m;
+                    font-weight: bolder;
                     text-decoration: underline;
                 }
                 table {
@@ -102,7 +103,8 @@ body {
             }
             .infoDetallada {
                 p {
-                    font-size: $fs-s;
+                    font-size: $fs-s;                    
+                    font-weight: bold;
                 }
                 ul {
                     list-style: circle;
