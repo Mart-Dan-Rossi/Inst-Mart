@@ -3,6 +3,7 @@
 $unMarg: 20px;
 $ambosLat: 0 20px;
 $allMarg: 20px 20px;
+$margLatYTop: 20px 20px 0 20px;
 
 
 //estructuras
@@ -183,6 +184,12 @@ body {
                         border: 1px solid;
                         padding: $allMarg;
                     }
+                }
+            }
+            .productosRelacionados {
+                border-top: 1px $color2 solid;
+                h3 {
+                    margin: $margLatYTop;
                 }
             }
         }

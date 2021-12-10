@@ -103,6 +103,15 @@ body {
             .infoDetallada {
                 color: $color2;
             }
+            .productosRelacionados {
+                a {
+                    .card {
+                        .card-body {
+                            background-color: $color6;
+                        }
+                    }
+                }
+            }
         }
         //main destacados
         div {

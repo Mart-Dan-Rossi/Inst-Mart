@@ -7874,6 +7874,9 @@ body main {
     font-weight: bolder; }
   body main .estructuraProducto .basicInterac .recuadrar p {
     font-weight: bold; }
+  body main .estructuraProducto .productosRelacionados h3, body main .estructuraProducto .productosRelacionados .h3 {
+    font-size: 1.2rem;
+    text-decoration: underline; }
   body main footer h2, body main footer .h2, body main footer h3, body main footer .h3, body main footer h4, body main footer .h4, body main footer h5, body main footer .h5, body main footer h6, body main footer .h6 {
     font-size: 1.2rem;
     text-decoration: underline; }
@@ -7946,6 +7949,8 @@ body {
           background-color: grey; }
       body main .estructuraProducto .infoDetallada {
         color: black; }
+      body main .estructuraProducto .productosRelacionados a .card .card-body {
+        background-color: rgba(128, 128, 128, 0.712); }
     body main div div div .miDisplay {
       background-color: rgba(211, 211, 211, 0.568); }
     body main .linksTiposInst {
@@ -8105,6 +8110,10 @@ body {
       body main .estructuraProducto .infoBasica tr td {
         border: 1px solid;
         padding: 20px 20px; }
+      body main .estructuraProducto .productosRelacionados {
+        border-top: 1px black solid; }
+        body main .estructuraProducto .productosRelacionados h3, body main .estructuraProducto .productosRelacionados .h3 {
+          margin: 20px 20px 0 20px; }
     body main div div div .miDisplay {
       position: absolute;
       width: 30vw;

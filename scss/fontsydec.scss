@@ -124,6 +124,12 @@ body {
                     }
                 }
             }
+            .productosRelacionados {
+                h3 {
+                    font-size: $fs-m;
+                    text-decoration: underline;
+                }
+            }
         }
         //footers
         footer {        
