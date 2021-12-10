@@ -4,6 +4,8 @@ $unMarg: 20px;
 $ambosLat: 0 20px;
 $allMarg: 20px 20px;
 $margLatYTop: 20px 20px 0 20px;
+$margTopBot: 20px 0;
+$margLatsBot: 0 20px 20px 20px;
 
 
 //estructuras
@@ -48,13 +50,19 @@ body {
                 }
             }
             .navRedes{
-                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
                 right: $unMarg;
-                .redes {
+                a{
+                    padding-left: $unMarg;
+                    .redes {
                     height: 25px;
                     position: relative;
-                    top: 0%;
-                    transition: all 0.5s;
+                        top: 0%;
+                        transition: all 0.5s;
+                    }                    
                 }
             }
             h1 {
@@ -220,6 +228,39 @@ body {
             }
         }
     }
+    //css log-in
+    .mainLog-in {
+        display: flex;
+        .miForm {
+            border: 1px solid $color13;
+            width: max-content;
+            margin-left: 20px;
+            margin-right: 20vw;
+            max-height: 180px;
+            input {
+                display: block;
+                margin: $margTopBot;
+                height: 30px;
+                width: 20vw;
+                min-width: 260px;
+            }
+            input {
+                margin: $allMarg;
+            }
+            button {
+                margin: $margLatsBot;
+            }
+        }
+        .contactoAlinDer {
+            img {
+                position: relative;
+                right: 0px;
+                width: 50vw;
+                max-width: 50%;
+                max-height: 180px;
+            }
+        }
+    }
     //contactanos
     .mainContacto {
         display: flex;
@@ -230,7 +271,7 @@ body {
             div {
                 .miForm {
                     width: 300px;
-                    margin-left: 10px;
+                    margin-left: $unMarg;
                 }
             }
         }

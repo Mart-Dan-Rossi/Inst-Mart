@@ -11,6 +11,7 @@ $color9: white;
 $color10:rgba(211, 211, 211, 0.568);
 $color11: rgb(36, 36, 36);
 $color12: rgba(0, 0, 0, 0.795);
+$color13: rgba(178, 34, 34, 0.418);
 $transparente: rgba(0, 0, 0, 0);
 
 body {
@@ -41,6 +42,14 @@ body {
         color: $color2;
         .breadcrumb-item a:hover{
             background-color: $color6;
+        }
+        .navRedes {
+            .linkAzul {
+                color: $color2;
+            }
+            .linkAzul:hover {
+                color: $color8;
+            }
         }
         nav {
             li{ 
@@ -134,8 +143,16 @@ body {
              }        
         }
     }
+    //main log-in
+    .mainLog-in {
+        color: $color9;
+        .miForm {
+            background-color: $color1;
+            border-radius: 7%;
+        }
+    }
     //main contactanos
-    .mainContacto{
+    .mainContacto {
         color: $color9;
     }
     a {
