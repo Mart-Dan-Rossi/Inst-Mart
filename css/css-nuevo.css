@@ -7355,19 +7355,21 @@ body {
         color: firebrick; }
       body main .linksTiposInst a:hover, body main .linksTiposInst a:active {
         color: cornflowerblue; }
-  body .mainLog-in {
-    color: white; }
-    body .mainLog-in .miForm {
+  body .mainLog-in, body .mainNuevaCuenta {
+    color: black; }
+    body .mainLog-in .miForm, body .mainNuevaCuenta .miForm {
       background-color: lightgrey;
       border-radius: 7%; }
-      body .mainLog-in .miForm button {
+      body .mainLog-in .miForm .btnAzul, body .mainNuevaCuenta .miForm .btnAzul {
         background-color: cornflowerblue; }
-      body .mainLog-in .miForm button:hover {
+      body .mainLog-in .miForm .btnAzul:hover, body .mainNuevaCuenta .miForm .btnAzul:hover {
         background-color: #447ee9; }
-      body .mainLog-in .miForm a button {
-        background-color: rgba(128, 128, 128, 0.712); }
-      body .mainLog-in .miForm a button:hover {
-        background-color: grey; }
+      body .mainLog-in .miForm a, body .mainNuevaCuenta .miForm a {
+        color: white; }
+        body .mainLog-in .miForm a button, body .mainNuevaCuenta .miForm a button {
+          background-color: rgba(128, 128, 128, 0.712); }
+        body .mainLog-in .miForm a button:hover, body .mainNuevaCuenta .miForm a button:hover {
+          background-color: grey; }
   body .mainContacto {
     color: white; }
   body a {
@@ -7565,6 +7567,36 @@ body {
       body .mainLog-in .miForm a button {
         margin: 0 20px 20px 0; }
     body .mainLog-in .contactoAlinDer img {
+      position: relative;
+      right: 0px;
+      width: 50vw;
+      max-width: 50%;
+      max-height: 180px; }
+  body .mainNuevaCuenta {
+    display: flex; }
+    body .mainNuevaCuenta .miForm {
+      border: 1px solid rgba(178, 34, 34, 0.418);
+      width: max-content;
+      padding-top: 20px;
+      margin-left: 20px;
+      margin-right: 20vw;
+      max-height: 450px; }
+      body .mainNuevaCuenta .miForm label {
+        margin-left: 20px; }
+      body .mainNuevaCuenta .miForm select, body .mainNuevaCuenta .miForm input {
+        height: 30px; }
+      body .mainNuevaCuenta .miForm select {
+        margin: 20px 0; }
+      body .mainNuevaCuenta .miForm input {
+        width: 20vw;
+        min-width: 260px;
+        margin: 20px 20px 20px 40px;
+        display: block; }
+      body .mainNuevaCuenta .miForm button {
+        margin: 0 0 20px 20px; }
+      body .mainNuevaCuenta .miForm a button {
+        margin: 0 20px 20px 0; }
+    body .mainNuevaCuenta .contactoAlinDer img {
       position: relative;
       right: 0px;
       width: 50vw;

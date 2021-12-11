@@ -144,19 +144,20 @@ body {
              }        
         }
     }
-    //main log-in
-    .mainLog-in {
-        color: $color9;
+    //main log-in y nueva cuenta
+    .mainLog-in, .mainNuevaCuenta {
+        color: $color2;
         .miForm {
             background-color: $color1;
             border-radius: 7%;
-            button {
+            .btnAzul {
                 background-color: $color8;
             }
-            button:hover {
+            .btnAzul:hover {
                 background-color: $color14;
             }
             a {
+                color: $color9;
                 button {
                     background-color: $color6;
                 }
