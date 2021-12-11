@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital,wght@1,200&display=swap');
 //----------------------------------
 //Tamaños de letra
-$fs-m: 1.2rem;
+$fs-m: 1rem;
 $fs-sr: $fs-m - 0.2;
 $fs-s: $fs-m - 0.1;
 $fs-l: $fs-m + 0.1;
@@ -134,7 +134,7 @@ body {
         //Log-in
         .mainLog-in {
             .miForm {
-                font-size: $fs-m;                
+                font-size: $fs-m;
             }
         }
         //footers
@@ -188,7 +188,7 @@ body {
                         }
                     }
                 }
-            }
+            }            
         }
     }
 }

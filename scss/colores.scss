@@ -12,6 +12,7 @@ $color10:rgba(211, 211, 211, 0.568);
 $color11: rgb(36, 36, 36);
 $color12: rgba(0, 0, 0, 0.795);
 $color13: rgba(178, 34, 34, 0.418);
+$color14: rgb(68, 126, 233);
 $transparente: rgba(0, 0, 0, 0);
 
 body {
@@ -149,6 +150,20 @@ body {
         .miForm {
             background-color: $color1;
             border-radius: 7%;
+            button {
+                background-color: $color8;
+            }
+            button:hover {
+                background-color: $color14;
+            }
+            a {
+                button {
+                    background-color: $color6;
+                }
+                button:hover {
+                    background-color: $color3;
+                }
+            }
         }
     }
     //main contactanos

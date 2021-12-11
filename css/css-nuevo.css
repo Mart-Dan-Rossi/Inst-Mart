@@ -7228,67 +7228,67 @@ body header {
 
 body main {
   font-family: "Roboto Mono", monospace;
-  font-size: 1.2rem; }
+  font-size: 1rem; }
   body main .leyenda {
-    font-size: 1rem; }
+    font-size: 0.8rem; }
   body main .contenidoIndex {
     font-weight: bolder;
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   body main div div div .miDisplay .h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold; }
   body main div div div .miDisplay p {
-    font-size: 1.1rem; }
+    font-size: 0.9rem; }
   body main .linksTiposInst a {
     font-weight: bold;
     text-align: center; }
   body main .filtros .mih3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bolder;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica table tr td {
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada ul {
     list-style: circle; }
     body main .estructuraProducto .infoDetallada ul li {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
   body main .estructuraProducto .basicInterac .recuadrar p, body main .estructuraProducto .basicInterac .recuadrar h2, body main .estructuraProducto .basicInterac .recuadrar .h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bolder; }
   body main .estructuraProducto .basicInterac .recuadrar p {
     font-weight: bold; }
   body main .estructuraProducto .productosRelacionados h3, body main .estructuraProducto .productosRelacionados .h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: underline; }
   body main .mainLog-in .miForm {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   body main footer h2, body main footer .h2, body main footer h3, body main footer .h3, body main footer h4, body main footer .h4, body main footer h5, body main footer .h5, body main footer h6, body main footer .h6 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: underline; }
   body main footer .footer p {
-    font-size: 1.1rem; }
+    font-size: 0.9rem; }
 
 @media (min-width: 1025px) {
   body main {
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
     body main .leyenda {
-      font-size: 1.1rem; }
+      font-size: 0.9rem; }
     body main div div div .miDisplay .h5 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: bold; }
     body main div div div .miDisplay p {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     body main .contenidoIndex {
-      font-size: 1.5rem; }
+      font-size: 1.3rem; }
     body main .filtros .displayFS div span {
       font-weight: 900;
-      font-size: 1.5rem; } }
+      font-size: 1.3rem; } }
 
 body {
   color: lightgrey;
@@ -7360,6 +7360,14 @@ body {
     body .mainLog-in .miForm {
       background-color: lightgrey;
       border-radius: 7%; }
+      body .mainLog-in .miForm button {
+        background-color: cornflowerblue; }
+      body .mainLog-in .miForm button:hover {
+        background-color: #447ee9; }
+      body .mainLog-in .miForm a button {
+        background-color: rgba(128, 128, 128, 0.712); }
+      body .mainLog-in .miForm a button:hover {
+        background-color: grey; }
   body .mainContacto {
     color: white; }
   body a {
@@ -7552,7 +7560,9 @@ body {
       body .mainLog-in .miForm input {
         margin: 20px 20px; }
       body .mainLog-in .miForm button {
-        margin: 0 20px 20px 20px; }
+        margin: 0 0 20px 20px; }
+      body .mainLog-in .miForm a button {
+        margin: 0 20px 20px 0; }
     body .mainLog-in .contactoAlinDer img {
       position: relative;
       right: 0px;
