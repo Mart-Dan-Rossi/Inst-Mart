@@ -15,6 +15,9 @@ $allYDobleIzq: 20px 20px 20px 40px;
 .iLineB, .iLineB li, footer li {
     display: inline-block;
 }
+.dBlock {
+    display: block;
+}
 body {
     max-width: 100vw;
     display: flex;
@@ -290,10 +293,10 @@ body {
                 margin: $margTopBot;
             }
             input {
+                text-align: center;
                 width: 20vw;
                 min-width: 260px;
                 margin: $allYDobleIzq;
-                display: block;
             }
             button {
                 margin: $margIzqBot;
