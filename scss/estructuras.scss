@@ -236,9 +236,10 @@ body {
         .miForm {
             border: 1px solid $color13;
             width: max-content;
+            padding-top: 20px;
             margin-left: 20px;
             margin-right: 20vw;
-            max-height: 180px;
+            max-height: 200px;
             input {
                 display: block;
                 margin: $margTopBot;
