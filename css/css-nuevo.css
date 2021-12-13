@@ -7338,6 +7338,11 @@ body {
       background-color: lightgrey; }
       body main .estructuraProducto .basicInterac .recuadrar {
         background-color: white; }
+        body main .estructuraProducto .basicInterac .recuadrar a {
+          color: white;
+          background-color: cornflowerblue; }
+        body main .estructuraProducto .basicInterac .recuadrar a:hover {
+          background-color: #2367e4; }
       body main .estructuraProducto .infoBasica, body main .estructuraProducto .productosRelacionados, body main .estructuraProducto .basicInterac {
         color: black; }
         body main .estructuraProducto .infoBasica tr td:first-child, body main .estructuraProducto .productosRelacionados tr td:first-child, body main .estructuraProducto .basicInterac tr td:first-child {
@@ -7534,9 +7539,16 @@ body {
         position: relative;
         bottom: 3px;
         border: 3px black solid; }
-        body main .estructuraProducto .basicInterac .recuadrar p, body main .estructuraProducto .basicInterac .recuadrar h2, body main .estructuraProducto .basicInterac .recuadrar .h2 {
+        body main .estructuraProducto .basicInterac .recuadrar h2, body main .estructuraProducto .basicInterac .recuadrar .h2, body main .estructuraProducto .basicInterac .recuadrar p {
           text-align: right;
           margin: 20px 20px; }
+        body main .estructuraProducto .basicInterac .recuadrar a {
+          padding: 6px;
+          border-radius: 7%;
+          border: 1px solid #2367e4;
+          position: relative;
+          left: 80%;
+          bottom: 15px; }
       body main .estructuraProducto .infoDetallada ul {
         margin: 20px 20px; }
       body main .estructuraProducto .infoBasica p, body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3, body main .estructuraProducto .infoBasica table {

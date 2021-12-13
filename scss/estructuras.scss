@@ -178,9 +178,17 @@ body {
                     position: relative;
                     bottom: 3px;
                     border: 3px $color2 solid;
-                    p, h2 {
+                    h2, p {
                         text-align: right;
                         margin: $allMarg;
+                    }
+                    a {
+                        padding: 6px;
+                        border-radius: 7%;
+                        border: 1px solid $color14;
+                        position: relative;
+                        left: 80%;
+                        bottom: 15px;
                     }
                 }
             }
