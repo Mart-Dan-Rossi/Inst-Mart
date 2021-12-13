@@ -262,5 +262,14 @@ body {
                 }
             }
         }
+        //contactanos
+        .mainContacto {
+            div {
+                .contactoAlinIzq {
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
     }
 }

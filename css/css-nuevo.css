@@ -7234,16 +7234,15 @@ body main {
   body main .contenidoIndex {
     font-weight: bolder;
     font-size: 1.2rem; }
-  body main div div div .miDisplay .h5 {
+  body main div div div .miDisplay .h5, body main div div div .miDisplay p {
     font-size: 1rem;
     font-weight: bold; }
-  body main div div div .miDisplay p {
-    font-size: 0.9rem; }
   body main .linksTiposInst a {
     font-weight: bold;
     text-align: center; }
   body main .filtros .mih3 {
     font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica .h3 {
     font-size: 1rem;
@@ -7420,7 +7419,10 @@ body {
       background-color: rgba(0, 0, 0, 0.795);
       color: firebrick; }
     100% {
-      opacity: 0; } } }
+      opacity: 0; } }
+  body .mainContacto div .contactoAlinIzq {
+    background-color: lightgrey;
+    color: black; } }
 
 .iLineB, .iLineB li, footer li {
   display: inline-block; }
@@ -7519,9 +7521,11 @@ body {
       width: 100%;
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around; }
+      justify-content: space-evenly; }
       body main .flexCards a {
         margin: 20px 20px; }
+      body main .flexCards a:hover {
+        transform: scale(1.1); }
     body main .paraCentrar {
       display: flex;
       flex-direction: column;
@@ -7565,6 +7569,8 @@ body {
       width: 30vw;
       height: 100%;
       top: 0%; }
+    body main .titleFiltros {
+      margin: 30px 20px 20px 20px; }
     body main .linksTiposInst {
       height: 50vh;
       min-height: 300px;
@@ -7572,7 +7578,8 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-row-gap: 5px; }
+      grid-row-gap: 5px;
+      justify-items: center; }
       body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclas, body main .linksTiposInst .linkDestacadosAccesorios {
         width: 30vw;
         border: rgba(0, 0, 0, 0.678) 4px solid; }
@@ -7610,6 +7617,7 @@ body {
     body .mainLog-in .miForm {
       border: 1px solid rgba(178, 34, 34, 0.418);
       width: max-content;
+      margin: 20px 0;
       padding-top: 20px;
       margin-left: 20px;
       margin-right: 20vw;
@@ -7662,16 +7670,14 @@ body {
       width: 50vw;
       max-width: 50%;
       max-height: 180px; }
-  body .mainContacto {
-    display: flex; }
-    body .mainContacto div p {
-      margin-right: 20px; }
-    body .mainContacto div div .miForm {
-      width: 300px;
-      margin-left: 20px; }
-    body .mainContacto .contactoAlinDer img {
-      width: 50vw;
-      max-width: 100%; }
+  body .mainContacto div p {
+    margin-right: 20px; }
+  body .mainContacto div div .miForm {
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 20px; }
+  body .mainContacto .contactoAlinDer {
+    display: none; }
   body footer {
     max-width: 100%;
     border-bottom: double 5px;
@@ -7693,7 +7699,7 @@ body {
       height: 100px; }
     body footer p {
       grid-area: footerP;
-      margin-left: 10px;
+      margin: 0 20px;
       padding: 0px 3px; }
     body footer ul {
       grid-area: footerUL; }
@@ -7759,6 +7765,12 @@ body {
     align-items: stretch; }
     body main .mainComprar .comprarAlinDer {
       margin-top: 20px; }
+  body .mainContacto {
+    display: flex; }
+    body .mainContacto div .contactoAlinIzq {
+      padding: 20px 0 20px 25%; }
+    body .mainContacto .contactoAlinDer {
+      display: inline-block; }
   body footer .footer {
     display: flex; } }
 

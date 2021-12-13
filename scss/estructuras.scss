@@ -146,9 +146,12 @@ body {
             width: 100%;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             a {
                 margin: $allMarg;
+            }
+            a:hover {                
+                transform: scale(1.1);
             }
         }
         //Productos
@@ -228,6 +231,9 @@ body {
                 }
             }
         }
+        .titleFiltros {
+            margin: 30px $unMarg $unMarg $unMarg;
+        }
         .linksTiposInst {
             height: 50vh;
             min-height: 300px;
@@ -236,6 +242,7 @@ body {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             grid-row-gap: 5px;
+            justify-items: center;
             .linkTodosLosDestacados, .linkDestacadosBYG, .linkDestacadosOtrasCuerdas, .linkDestacadosPercusion, .linkDestacadosVientos, .linkDestacadosTeclas, .linkDestacadosAccesorios {
                 width: 30vw;
                 border: $color4 4px solid;
@@ -289,6 +296,7 @@ body {
         .miForm {
             border: 1px solid $color13;
             width: max-content;
+            margin: $margTopBot;
             padding-top: 20px;
             margin-left: 20px;
             margin-right: 20vw;
@@ -368,7 +376,6 @@ body {
     }
     //contactanos
     .mainContacto {
-        display: flex;
         div {
             p {
                 margin-right: $unMarg;
@@ -377,14 +384,12 @@ body {
                 .miForm {
                     width: 300px;
                     margin-left: $unMarg;
+                    margin-bottom: $unMarg;
                 }
             }
         }
         .contactoAlinDer {
-            img {
-                width: 50vw;
-                max-width: 100%;
-            }
+            display: none;
         }
     }
     footer {
@@ -413,7 +418,7 @@ body {
         }
         p {
             grid-area: footerP;
-            margin-left: 10px;
+            margin: $ambosLat;
             padding: 0px 3px;
         }
         ul {
@@ -528,6 +533,18 @@ body {
                 .comprarAlinDer {
                     margin-top: $unMarg;
                 }
+            }
+        }
+        //contactanos
+        .mainContacto {            
+            display: flex;
+            div {
+                .contactoAlinIzq {
+                    padding: $unMarg 0 $unMarg 25%;
+                }
+            }
+            .contactoAlinDer {
+                display: inline-block;
             }
         }
         footer {

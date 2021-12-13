@@ -60,12 +60,9 @@ body {
             div{
                 div{
                     .miDisplay {
-                        .h5 {
+                        .h5, p {
                             font-size: $fs-m;
                             font-weight: bold;
-                        }
-                        p {
-                            font-size: $fs-s;
                         }
                     }
                 }
@@ -81,10 +78,10 @@ body {
         .filtros {
             .mih3 {
                 font-size: $fs-xl;
+                font-weight: bold;
                 text-decoration: underline;
             }
-        }
-            
+        }            
         //css productos
         .estructuraProducto {
             .infoBasica {
