@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="tienda online, instrumentos, musicales, Instrumentos Martín">
+    <meta name="description" content="Finaliza tu compra.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css-nuevo.css">
+    <title>Comprando - Instrumentos Martín</title>
+</head>
+
+<body>
+    <header>
+        <div class="navSection">
+            <h1>Comprando</h1>
+            <div class="iLineB" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../index.html" title="principal">>Principal</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Comprando</li>
+                </ol>
+            </div>
+
+            <div class="navRedes iLineB">
+                <a href="./log-in.html" class="linkAzul" target="_blank">Iniciar sesión</a>
+                <a class="iLineB" target="_blank" href="https://www.instagram.com/martindanielrossi/" title="Instagram"><img class="redes" src="../Img/logo-instagram.svg" alt="Instagram"></a>
+            </div>   
+            
+            <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Twelfth navbar example">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Instrumentos</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                          <li><a class="dropdown-item" href="./bajos-y-guitarras.html" title="bajos y guitarra">Bajos y guitarras</a></li>
+                          <li><a class="dropdown-item" href="./otras-cuerdas.html" title="otras cuerdas">Otras cuerdas</a></li>
+                          <li><a class="dropdown-item" href="./percusion.html" title="percusión">Percusión</a></li>
+                          <li><a class="dropdown-item" href="./vientos.html" title="vientos">Vientos</a></li>
+                          <li><a class="dropdown-item" href="./teclas.html" title="teclas">Teclas</a></li>
+                          <li><a class="dropdown-item" href="./accesorios-y-otros.html" title="Accesorios-y-otros">Accesorios y otros</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./todos-los-destacados.html" title="destacados">Destacados</a>
+                      </li>                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <main>
+      <div class="mainComprar">
+        <div class="comprarAlinDer">
+          <h2>Producto</h2>
+          <img src="../Img/Productos/Stratocaster-Femmto1.jpg" alt="imágen guitarra Femmto">
+          <div>
+            <p>Precio</p>
+            <p>$12.000</p>
+          </div>
+        </div>
+        <div>
+          <div class="direction">
+            <h2>Dirección</h2>
+            <img src="../Img/map-marker.svg" alt="Ícono de ubicación">
+            <span>Dirección del usuario 123 piso 1 departamento 1</span>
+            <a href="./log-in.html"><p>Editar o elegir otro</p></a>
+          </div>
+          <div>
+            <form>
+              <fieldset>              
+                <h2>Entrega del producto</h2>
+                <label>Quiero recibir el producto</label>
+                <p>
+                  <input type="radio" name="Recibo" value="direction" required>
+                  En la dirección indicada.
+                  <br>
+                  <input type="radio" name="Recibo" value="punto-de-retiro" required>
+                  En un punto de retiro cerca de la dirección indicada.
+                  <br>
+                  <input type="radio" name="Recibo" value="local" required>
+                  En la sucursal de Instrumentos-Martín más cercana
+                </p>
+              </fieldset>
+              <fieldset>
+                <h2>Formas de pago</h2>
+                <label>Quiero pagar con</label>
+                <p>
+                  <input type="radio" name="pago" value="credito" required>
+                    Terjeta de crédito BANCO **** 4659
+                    <br>
+                    <input type="radio" name="pago" value="debito" required>
+                    Tarjeta de débito BANCO **** 5489
+                </p>
+              </fieldset>
+              <fieldset>
+                <h2>Cuotas</h2>
+                <label>Quiero pagar en la siguiente cantidad de cuotas</label>
+                <p>
+                  <input type="radio" name="pago" value="1cuota" required>
+                  1 x $12.000
+                  <br>
+                  <input type="radio" name="pago" value="2cuotas" required>
+                  2 x $6.200
+                  <br>
+                  <input type="radio" name="pago" value="3cuotas" required>
+                  3 x $4.200
+                </p>
+              </fieldset>
+              <button type="button" class="btn btn-secondary btnAzul">Comprar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <footer>
+        <h2>Contacto</h2>
+        <div class="footer">            
+        <img class="footerLogo" src="../Img/Logo4.png" alt="Logo Instrumentos Martín">
+            <p class="iLineB">Esta es una página de prueba, por favor no entenderla como un sitio real. A continuación tienen un link para <a class="linkAContactanos" href="./Contactanos.html">dejar tu comentario</a>. Espero entiendan que tampoco es algo real sino una prueba. Gracias.</p>
+            <ul>
+                <li class="iLineB"><img src="../Img/Telefono-blanco.svg" alt="Imágen teléfono"><br>15-6455-1800</li>
+                <li class="iLineB"><img src="../Img/Mail.svg" alt="Imágen correo"><br>m_rossi93@hotmail.com</li>
+                <li class="iLineB"><img src="../Img/wtsp.svg" alt="Logo whatsapp"><br>15-6455-1800</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

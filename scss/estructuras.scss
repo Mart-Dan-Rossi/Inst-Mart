@@ -233,6 +233,47 @@ body {
                 border: $color4 4px solid;
             }
         }
+        //comprar
+        .mainComprar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .comprarAlinDer {
+                padding: $margTopBot;
+                width: 360px;
+                min-width: 30vw;
+                h2 {
+                    margin-left: $unMarg;
+                }
+                img {
+                    margin-left: 150px;
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            div{
+                width: 360px;
+                min-width: 30vw;
+                .direction {
+                    padding: $allMarg;
+                    img {
+                        height: 30px;
+                    }
+                }
+                div {
+                    margin-top: $unMarg;
+                    padding: $allMarg;
+                    form {
+                        fieldset {
+                            border: 2px $color2 solid;
+                            margin: $margTopBot;
+                            padding: $ambosLat;
+                        }
+                    }
+                }
+            }
+        }
     }
     //css log-in
     .mainLog-in {
@@ -472,11 +513,19 @@ body {
                     width: 14vw;
                 }
             }
+            //comprar
+            .mainComprar {
+                flex-direction: row-reverse;
+                align-items: stretch;
+                .comprarAlinDer {
+                    margin-top: $unMarg;
+                }
+            }
         }
         footer {
             .footer {
                 display: flex;
             }
-        }        
+        }
     }
 }

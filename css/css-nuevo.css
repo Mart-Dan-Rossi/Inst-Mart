@@ -7355,6 +7355,22 @@ body {
         color: firebrick; }
       body main .linksTiposInst a:hover, body main .linksTiposInst a:active {
         color: cornflowerblue; }
+    body main .mainComprar div .direction {
+      background-color: lightgrey;
+      color: black; }
+      body main .mainComprar div .direction a {
+        color: #2367e4; }
+      body main .mainComprar div .direction a:hover {
+        color: cornflowerblue; }
+    body main .mainComprar div div {
+      background-color: lightgrey;
+      color: black; }
+      body main .mainComprar div div form .btnAzul {
+        background-color: cornflowerblue; }
+      body main .mainComprar div div form .btnAzul:hover {
+        background-color: #2367e4; }
+    body main .mainComprar .comprarAlinDer {
+      background-color: grey; }
   body .mainLog-in, body .mainNuevaCuenta {
     color: black; }
     body .mainLog-in .miForm, body .mainNuevaCuenta .miForm {
@@ -7363,7 +7379,7 @@ body {
       body .mainLog-in .miForm .btnAzul, body .mainNuevaCuenta .miForm .btnAzul {
         background-color: cornflowerblue; }
       body .mainLog-in .miForm .btnAzul:hover, body .mainNuevaCuenta .miForm .btnAzul:hover {
-        background-color: #447ee9; }
+        background-color: #2367e4; }
       body .mainLog-in .miForm a, body .mainNuevaCuenta .miForm a {
         color: white; }
         body .mainLog-in .miForm a button, body .mainNuevaCuenta .miForm a button {
@@ -7548,6 +7564,35 @@ body {
       body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclas, body main .linksTiposInst .linkDestacadosAccesorios {
         width: 30vw;
         border: rgba(0, 0, 0, 0.678) 4px solid; }
+    body main .mainComprar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      body main .mainComprar .comprarAlinDer {
+        padding: 20px 0;
+        width: 360px;
+        min-width: 30vw; }
+        body main .mainComprar .comprarAlinDer h2, body main .mainComprar .comprarAlinDer .h2 {
+          margin-left: 20px; }
+        body main .mainComprar .comprarAlinDer img {
+          margin-left: 150px;
+          height: 50px;
+          width: 50px; }
+      body main .mainComprar div {
+        width: 360px;
+        min-width: 30vw; }
+        body main .mainComprar div .direction {
+          padding: 20px 20px; }
+          body main .mainComprar div .direction img {
+            height: 30px; }
+        body main .mainComprar div div {
+          margin-top: 20px;
+          padding: 20px 20px; }
+          body main .mainComprar div div form fieldset {
+            border: 2px black solid;
+            margin: 20px 0;
+            padding: 0 20px; }
   body .mainLog-in {
     display: flex; }
     body .mainLog-in .miForm {
@@ -7697,6 +7742,11 @@ body {
     body main .linksTiposInst .linkTodosLosDestacados, body main .linksTiposInst .linkDestacadosBYG, body main .linksTiposInst .linkDestacadosOtrasCuerdas, body main .linksTiposInst .linkDestacadosPercusion, body main .linksTiposInst .linkDestacadosVientos, body main .linksTiposInst .linkDestacadosTeclas, body main .linksTiposInst .linkDestacadosAccesorios {
       height: 15vh;
       width: 14vw; }
+  body main .mainComprar {
+    flex-direction: row-reverse;
+    align-items: stretch; }
+    body main .mainComprar .comprarAlinDer {
+      margin-top: 20px; }
   body footer .footer {
     display: flex; } }
 

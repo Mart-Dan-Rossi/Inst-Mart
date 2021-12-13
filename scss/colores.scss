@@ -12,7 +12,7 @@ $color10:rgba(211, 211, 211, 0.568);
 $color11: rgb(36, 36, 36);
 $color12: rgba(0, 0, 0, 0.795);
 $color13: rgba(178, 34, 34, 0.418);
-$color14: rgb(68, 126, 233);
+$color14: rgb(35, 103, 228);
 $transparente: rgba(0, 0, 0, 0);
 
 body {
@@ -142,6 +142,36 @@ body {
              a:hover, a:active {
                  color:$color8
              }        
+        }
+        //comprar
+        .mainComprar {
+            div{
+                .direction {
+                    background-color: $color1;
+                    color: $color2;
+                    a {
+                        color: $color14;                        
+                    }
+                    a:hover {
+                        color: $color8;
+                    }
+                }
+                div {
+                    background-color: $color1;
+                    color: $color2;
+                    form {
+                        .btnAzul {
+                            background-color: $color8;
+                        }
+                        .btnAzul:hover {
+                            background-color: $color14;
+                        }
+                    }
+                }
+            }
+            .comprarAlinDer {
+                background-color: $color3;
+            }
         }
     }
     //main log-in y nueva cuenta
