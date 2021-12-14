@@ -186,11 +186,11 @@ body {
                         margin: $allMarg;
                     }
                     a {
+                        margin-left: 15px;
                         padding: 6px;
                         border-radius: 7%;
                         border: 1px solid $color14;
-                        position: relative;
-                        left: 80%;
+                        position: absolute;
                         bottom: 15px;
                     }
                 }

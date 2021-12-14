@@ -7251,7 +7251,7 @@ body main {
   body main .estructuraProducto .infoBasica table tr td {
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada ul {
     list-style: circle; }
@@ -7547,11 +7547,11 @@ body {
           text-align: right;
           margin: 20px 20px; }
         body main .estructuraProducto .basicInterac .recuadrar a {
+          margin-left: 15px;
           padding: 6px;
           border-radius: 7%;
           border: 1px solid #2367e4;
-          position: relative;
-          left: 80%;
+          position: absolute;
           bottom: 15px; }
       body main .estructuraProducto .infoDetallada ul {
         margin: 20px 20px; }
@@ -7898,7 +7898,7 @@ body main .linksTiposInst .linkTodosLosDestacados {
   background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosBYG {
-  background-image: url(../Img/Movile/bajosYGuitarras.jpg);
+  background-image: url(../Img/FullScreen/bajo-acustico.jpg);
   background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosOtrasCuerdas {
@@ -7919,7 +7919,7 @@ body main .linksTiposInst .linkDestacadosTeclas {
   background-size: cover; }
 
 body main .linksTiposInst .linkDestacadosAccesorios {
-  background-image: url(../Img/Movile/accesorios.jpg);
+  background-image: url(../Img/FullScreen/otros.jpg);
   background-size: cover; }
 
 @media (min-width: 1025px) {
