@@ -4426,6 +4426,8 @@ body {
         color: firebrick; }
     body main .flexCards .card .card-body {
       color: black; }
+    body main .bgWhite {
+      background-color: white; }
     body main .estructuraProducto {
       background-color: lightgrey; }
       body main .estructuraProducto .basicInterac .recuadrar {
@@ -4619,12 +4621,9 @@ body {
         margin: 20px 20px; }
       body main .flexCards a:hover {
         transform: scale(1.1); }
-    body main .paraCentrar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: white; }
-      body main .paraCentrar .carousel .carousel-inner .carousel-item img {
+    body main .bgWhite .miCarouselProductos {
+      margin: 0 15%; }
+      body main .bgWhite .miCarouselProductos .carousel-inner .carousel-item img {
         height: 70vh; }
     body main .estructuraProducto {
       display: flex;
