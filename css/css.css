@@ -4625,8 +4625,7 @@ body {
       align-items: center;
       background-color: white; }
       body main .paraCentrar .carousel .carousel-inner .carousel-item img {
-        height: 70vh;
-        width: 70vh; }
+        height: 70vh; }
     body main .estructuraProducto {
       display: flex;
       flex-flow: column nowrap;
