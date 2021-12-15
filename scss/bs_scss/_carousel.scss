@@ -15,10 +15,6 @@
   position: relative;
 }
 
-.carousel.pointer-event {
-  touch-action: pan-y;
-}
-
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -54,33 +50,6 @@
 }
 
 /* rtl:end:ignore */
-
-
-//
-// Alternate transitions
-//
-
-.carousel-fade {
-  .carousel-item {
-    opacity: 0;
-    transition-property: opacity;
-    transform: none;
-  }
-
-  .carousel-item.active,
-  .carousel-item-next.carousel-item-start,
-  .carousel-item-prev.carousel-item-end {
-    z-index: 1;
-    opacity: 1;
-  }
-
-  .active.carousel-item-start,
-  .active.carousel-item-end {
-    z-index: 0;
-    opacity: 0;
-    @include transition(opacity 0s $carousel-transition-duration);
-  }
-}
 
 
 //

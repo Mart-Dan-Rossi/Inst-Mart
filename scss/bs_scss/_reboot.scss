@@ -152,15 +152,6 @@ abbr[data-bs-original-title] { // 1
 }
 
 
-// Address
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
-
-
 // Lists
 
 ol,
@@ -194,13 +185,6 @@ dd {
 }
 
 
-// Blockquote
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-
 // Strong
 //
 // Add the correct font weight in Chrome, Edge, and Safari
@@ -217,14 +201,6 @@ strong {
 
 small {
   @include font-size($small-font-size);
-}
-
-
-// Mark
-
-mark {
-  padding: $mark-padding;
-  background-color: $mark-bg;
 }
 
 
@@ -314,29 +290,6 @@ code {
   }
 }
 
-kbd {
-  padding: $kbd-padding-y $kbd-padding-x;
-  @include font-size($kbd-font-size);
-  color: $kbd-color;
-  background-color: $kbd-bg;
-  @include border-radius($border-radius-sm);
-
-  kbd {
-    padding: 0;
-    @include font-size(1em);
-    font-weight: $nested-kbd-font-weight;
-  }
-}
-
-
-// Figures
-//
-// Apply a consistent margin strategy (matches our type styles).
-
-figure {
-  margin: 0 0 1rem;
-}
-
 
 // Images and content
 
@@ -355,13 +308,6 @@ table {
   border-collapse: collapse;
 }
 
-caption {
-  padding-top: $table-cell-padding-y;
-  padding-bottom: $table-cell-padding-y;
-  color: $table-caption-color;
-  text-align: left;
-}
-
 // 1. Removes font-weight bold by inheriting
 // 2. Matches default `<td>` alignment by inheriting `text-align`.
 // 3. Fix alignment for Safari
@@ -372,12 +318,8 @@ th {
   text-align: -webkit-match-parent; // 3
 }
 
-thead,
-tbody,
-tfoot,
 tr,
-td,
-th {
+td {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
@@ -414,7 +356,6 @@ button:focus:not(:focus-visible) {
 input,
 button,
 select,
-optgroup,
 textarea {
   margin: 0; // 1
   font-family: inherit;
@@ -583,36 +524,6 @@ legend {
 ::-webkit-file-upload-button {
   font: inherit; // 1
   -webkit-appearance: button; // 2
-}
-
-// Correct element displays
-
-output {
-  display: inline-block;
-}
-
-// Remove border from iframe
-
-iframe {
-  border: 0;
-}
-
-// Summary
-//
-// 1. Add the correct display in all browsers
-
-summary {
-  display: list-item; // 1
-  cursor: pointer;
-}
-
-
-// Progress
-//
-// Add the correct vertical alignment in Chrome, Firefox, and Opera.
-
-progress {
-  vertical-align: baseline;
 }
 
 
