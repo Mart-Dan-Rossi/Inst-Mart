@@ -195,10 +195,13 @@ body {
                 ul {
                     margin:$allMarg
                 }
+                h4 {
+                    margin: $unMarg;
+                }
             }
             .infoBasica {
                 p, h3, table {
-                    margin: 20px;
+                    margin: $unMarg;
                 }
                 tr{                    
                     td {

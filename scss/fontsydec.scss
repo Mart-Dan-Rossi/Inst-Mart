@@ -86,7 +86,7 @@ body {
         .estructuraProducto {
             .infoBasica {
                 h3 {
-                    font-size: $fs-m;
+                    font-size: $fs-l;
                     font-weight: bolder;
                     text-decoration: underline;
                 }
@@ -101,6 +101,10 @@ body {
             .infoDetallada {
                 p {
                     font-size: $fs-m;                    
+                    font-weight: bold;
+                }
+                h4 {
+                    font-weight: $fs-m;
                     font-weight: bold;
                 }
                 ul {

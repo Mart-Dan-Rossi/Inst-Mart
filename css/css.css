@@ -4337,13 +4337,16 @@ body main {
     font-weight: bold;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
     text-decoration: underline; }
   body main .estructuraProducto .infoBasica table tr td {
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada p {
     font-size: 1rem;
+    font-weight: bold; }
+  body main .estructuraProducto .infoDetallada h4 {
+    font-weight: 1rem;
     font-weight: bold; }
   body main .estructuraProducto .infoDetallada ul {
     list-style: circle; }
@@ -4646,6 +4649,8 @@ body {
           bottom: 15px; }
       body main .estructuraProducto .infoDetallada ul {
         margin: 20px 20px; }
+      body main .estructuraProducto .infoDetallada h4 {
+        margin: 20px; }
       body main .estructuraProducto .infoBasica p, body main .estructuraProducto .infoBasica h3, body main .estructuraProducto .infoBasica table {
         margin: 20px; }
       body main .estructuraProducto .infoBasica tr td {
