@@ -4627,7 +4627,7 @@ body {
     body main .bgWhite .miCarouselProductos {
       margin: 0 15%; }
       body main .bgWhite .miCarouselProductos .carousel-inner .carousel-item img {
-        height: 70vh; }
+        height: 50vh; }
     body main .estructuraProducto {
       display: flex;
       flex-flow: column nowrap;
